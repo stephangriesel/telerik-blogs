@@ -1,4 +1,5 @@
 ---
+published: true
 title: Customizing Components
 summary: In the fourth post, Eric demonstrates how to customize the Grid component.
 keywords: JavaScript, Kendo UI, Kendo UI for React, KendoReact,React, Web Development

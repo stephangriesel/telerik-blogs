@@ -1,4 +1,5 @@
 ---
+published: true
 title: Using Charts and React Hooks
 summary: The fifth and final post in the series uses the Chart component from KendoReact and shows how to work with React Hooks.
 keywords: JavaScript, Kendo UI, Kendo UI for React, KendoReact,React, Web Development

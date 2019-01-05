@@ -1,4 +1,5 @@
 ---
+published: true
 title: Let's Build a Sales Dashboard with React
 summary: Follow along as we mock-up, design and lay out a sales dashboard with native React components from KendoReact, complete with a responsive grid, data, charts and more.
 keywords: JavaScript, Kendo UI for React, KendoReact, React, Tutorial, Web Development

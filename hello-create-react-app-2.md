@@ -1,4 +1,5 @@
 ---
+published: true
 title: Hello Create React App 2
 published: true
 summary: Follow along as we mock-up, design and lay out a sales dashboard with native React components from KendoReact, complete with a responsive grid, data, charts and more.

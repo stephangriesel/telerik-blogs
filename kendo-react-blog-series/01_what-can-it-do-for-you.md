@@ -1,4 +1,5 @@
 ---
+published: true
 title: What Can It Do for You?
 summary: In this first post in the Getting Started with KendoReact series, you'll learn what KendoReact can do for you, the React developer. This series builds on the KendoReact video series by Tara Z. Manicsic.
 keywords: JavaScript, Kendo UI, Kendo UI for React, KendoReact,React, Web Development

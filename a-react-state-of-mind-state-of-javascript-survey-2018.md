@@ -1,4 +1,5 @@
 ---
+published: true
 title: A React State of Mind (State of JavaScript Survey 2018)
 summary: JavaScript is developing at such a rapid pace. It’s no wonder the [State of JavaScript](https://stateofjs.com/) survey is something we wait for each year to see exactly what state of mind developers are in. This year is a continuation of the popularity we saw last year by React and friends. It is no surprise that React dominates the narrative again.
 keywords: JavaScript, React, Poll, 2018
