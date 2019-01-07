@@ -8,7 +8,7 @@ In this first post in the [Getting Started with KendoReact](https://www.telerik.
 
 The Kendo UI team has been building component libraries for over 15 years and they have gained a lot of experience with user interface components in particular. They've built them for [jQuery](https://www.telerik.com/kendo-ui), [Angular](https://www.telerik.com/kendo-angular-ui/), [Vue](https://www.telerik.com/kendo-vue-ui), and now they're out with a true native component library built specifically for [React](https://www.telerik.com/kendo-react-ui).
 
-> A license holder of the React libraries also has access to the jQuery, Vue and Angular libraries as well. Not that anybody would ever stray from React or have different projects where they use different libraries 😋. But, just in case, you have all of our JavaScript libraries at your disposal.
+> A license holder of the React libraries also has access to all of the Kendo UI flavors (Angular, React, Vue and jQuery) with the Kendo UI bundle otherwise you can purchase the KendoReact license exclusively. Not that anybody would ever stray from React or have different projects where they use different libraries 😋. But, just in case, you have all of our JavaScript libraries at your disposal.
 
 ## Why React?
 
