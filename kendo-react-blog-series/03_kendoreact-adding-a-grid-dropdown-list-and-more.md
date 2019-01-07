@@ -2,7 +2,7 @@
 published: true
 title: Adding KendoReact Grid, Dropdown List and More
 summary: In the third part of our Getting Started with KendoReact series, Eric Bishard shows off how to use some of our most popular KendoReact components in a React app.
-keywords: JavaScript, Kendo UI, Kendo UI for React, KendoReact,React, Web Development
+keywords: JavaScript, Kendo UI, Kendo UI for React, KendoReact, React, Web Development
 ---
 
 Welcome back to our [Getting Started with KendoReact](https://www.telerik.com/blogs/kendo-react-getting-started-blog-series) series! In the third entry in this series, Eric Bishard shows off how to use some of our most popular KendoReact components in a React application. See what KendoReact can do for you, the React developer!

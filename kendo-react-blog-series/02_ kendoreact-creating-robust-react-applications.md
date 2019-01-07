@@ -2,7 +2,7 @@
 published: true
 title: Creating Robust React Applications
 summary: This second post in the series gets us started with KendoReact and provides a better understanding of how to build robust applications in React.
-keywords: JavaScript, Kendo UI, Kendo UI for React, KendoReact,React, Web Development
+keywords: JavaScript, Kendo UI, Kendo UI for React, KendoReact, React, Web Development
 ---
 
 In this second post of the [Getting Started with KendoReact](https://www.telerik.com/blogs/kendo-react-getting-started-blog-series) series, Eric Bishard helps you better understand KendoReact so you can build more robust applications. See what KendoReact can do for you, the React developer!

@@ -2,7 +2,7 @@
 published: true
 title: Getting Started Blog Series TOC
 summary: These companion articles by Eric Bishard bring our highly informative video series by Tara Manicsic up to the present day with new details, including working with React Hooks. We get you up and running with our native UI component library for React JS.
-keywords: JavaScript, Kendo UI, Kendo UI for React, KendoReact,React, Web Development
+keywords: JavaScript, Kendo UI, Kendo UI for React, KendoReact, React, Web Development
 ---
 These companion articles by Eric Bishard bring our highly informative [video series](https://www.telerik.com/campaigns/kendo-ui/using-kendo-ui-with-react-video-tutorial-trial) by Tara Manicsic up to the present day with new details, including working with React Hooks. We get you up and running with our native UI component library for React JS.
 
