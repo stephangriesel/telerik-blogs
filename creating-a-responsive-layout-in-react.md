@@ -1,6 +1,6 @@
 ---
 published: true
-title: Creating a Responsive layout in React
+title: Creating a Responsive Layout in React
 summary: In this article we learn how to setup a React application with Flexbox to make our layout responsive and a few npm packages to help with images and breakpoints, we also showcase the KendoReact Menu component and achieve some practical responsiveness!
 keywords: Guide, JavaScript, React, Responsive, Tutorial 
 ---
