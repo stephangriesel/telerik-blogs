@@ -9,7 +9,7 @@ In our first article we started by learning how to setup some basic layout in ou
 
 Our starting point will be the StackBlitz demo that we left off with in our previous article:
 
-[STACKBLITZ DEMO 04](https://stackblitz.com/edit/react-layout-hello-world-4)
+[STACKBLITZ DEMO 04](https://stackblitz.com/edit/react-responsive-grid-1)
 
 Our application to start with should look like the image below:
 
