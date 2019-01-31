@@ -40,7 +40,45 @@ You can see more information from the [StateOfJs.com](https://StateOfJs.com) I w
 
 <!-- WIP BELOW THIS SECTION  -->
 
-### Redux and React Router 
+### A State Management Revolution
+
+From the earliest versions of React, there's always been a way of handling state that encouraged a one way data model. But using setState was always tricky for newcomers to React. Even after learning the ropes, it was still possible to introduce bugs when using React Core's own state solution.
+
+![](https://i.imgur.com/XIttY3e.png)
+
+Because setState is asynchronous and the fact that it causes unnecessarry renders in certain situations, and for the fact that sometimes developers didn't know when to use setState vs manage state on their own, it was misunderstood and at a certain point developers would flat out stop using it.
+
+In 2017 and 2018, React Fiber was introduced as React 16, in fact we are still on this same semver major version number now with 16.7 just recently being released. But when the version number was bumped to 16, we got an entire rewrite of the React engine and this rewrite was codenamed React Fiber.
+
+Most of the information around the reason for the rewrite are jammed into several talks that took place at [React Conf 2017](https://www.youtube.com/playlist?list=PLb0IAmt7-GS3fZ46IGFirdqKTIxlws7e0), but this rewrite paved the way for something that I believe will change the way we write React code in 2019. The community has embraced [React Hooks](https://reactjs.org/docs/hooks-intro.html).
+
+Because of the nature of React's one way data flow, and it's close relation to the library Redux, React released an alpha in November of 2018 that redefined how to work with state using the `useState`, `useEffect` and `useReducer` hooks and snatched a play right out of the Redux pattern. This introduction of Hooks is probably the most important and notable change in React and will create the most impact on React in 2019.
+
+Before the introduction of Hooks we had the concept of class components which you could use to build components that needed to manage state and have lifecycle methods and other things that could only be done in classes. One of the drawbacks to prolificly using classes in React or anywhere for that matter is how `.this` is treated. One would have to bind functions and do extraneous work to both provide interaction in the component as well as manage state.
+
+We also had the idea of functional stateless components which provided a much more concise ES6 style syntax for React components boasted no more `.this` keyword and other benefits. It also set the scene for React components to become worldclass. More on that later. When you would create these types of functional stateless components, it typically meant that they would only recieve input (props) and not manage any state. Event though you could not use React's built in state, it was obvious how powerful writing components this way could be, but for the time being the drawbacks were that you couldn't interact with React's state and you couldn't include lifecycle methods. 
+
+To quote Cory House in a [2016 hackernoon article](https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc): "React stateless functions offer the most elegant approach I’ve seen for creating a reusable component in any popular framework". And it was true. 
+
+React had a hot issue on it's hands in creating Hooks. You see, they had given us a more pure way to write components in a more functional syntax and that required the React developer to think more about composition. Which components will be smart, which ones dumb, etc. This was great to have a period of time where what you could do with these functional components was minimal, it kept you honest and lean.
+
+When React Hooks became available it menat that you could now use Hooks to tap into that React state and lifecycle methods and get all the other benefits as well. The new tools you would use to do this are: `useState` and `useEffects`, they also provided a Hook called `useReducer` which enabled a Redux style pattern for simple UI state management. We now have an abstraction around the `setState()` feature that can incorporate actions, reducers and we can manage that internal UI state in a similar fashion to how we manage our data and it's state within the application.
+
+Back to the first release of 2018, we had something called Context API finally get shipped, it meant we could share data using a provider and allow a tree or groupd of components in our application share the same context. The initial implementation used tags that would allow you to wrap a number of components and provide them all with this context. As you can imagine this was a step in the right direction, but in colex scenarios this can start to breakdown having to wrap providers and consumer tags around areas of the code where you wanted to have access to that context.
+
+Hooks brought us the `useContext` hook and overnight we all breathed a sigh of relief.
+
+Long live Hooks, it's a revolution in React this year, if you don't believe me, wait and see. I write about all of these Hooks and show you the before and after as well as how to work with each of them in the following articles:
+
+[](https://www.telerik.com/blogs/how-to-use-basic-react-hooks-for-state-and-effects)
+[](https://www.telerik.com/blogs/how-to-use-basic-react-hooks-for-context)
+[](https://www.telerik.com/blogs/how-to-use-basic-react-hooks-for-context)
+
+
+
+
+
+
 
 
 ### The Biggest Impact on React Considering JavaScript
