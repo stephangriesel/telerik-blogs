@@ -85,7 +85,7 @@ React had a hot issue on it's hands in creating Hooks. You see, they had given u
 
 When React Hooks became available it meant that you could now use Hooks to tap into that React state and lifecycle methods and get all the other benefits as well. The new tools you would use to do this are: `useState` and `useEffects`, they also provided a Hook called `useReducer` which enabled a Redux style pattern for simple UI state management. We now have an abstraction around the `setState()` feature that can incorporate actions, reducers and we can manage that internal UI state in a similar fashion to how we manage our data and it's state within the application.
 
-## What Major Changes did 2018 Bring?
+## What Major Changes Did 2018 Bring?
 
 In 2018 we bore witness to a major master plan laid out release by release by the React team. It should be noted that each release was a minor release, meaning the semver in the fact that we never bump the major number of the release which is synonymous with wide breaking changes. Everything they did, they did as minor releases. This is important to note because, in order to roll out the changes that I am going to tell you about and breaking the old way of doing things, the React team ensured that each new features released were, for the most part, backwards compatible and work side by side with existing features.
 
