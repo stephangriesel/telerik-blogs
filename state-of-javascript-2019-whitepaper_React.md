@@ -31,7 +31,7 @@ This report has valuable information around JavaScript and as a professional it 
 
 No reason to be sad here though, React developers couldn’t be happier with the results. Check out the Front-end Frameworks - Overview.
 
-![](https://i.imgur.com/rezQE5a.gif)
+![](https://i.imgur.com/zRbPVab.png)
 
 We can see what frameworks are popular and used or would like to be used by the survey participant's. In the **"Used it, would use again"** category, React is strong, we see that other frameworks also have a good showing. I would also say that this survey must be taken with a grain of salt as I feel the data set may be heavily answered by React developers, partially due to the authors' background and the community the survey stems from. But it's still something we should take into consideration when gauging React's overall popularity and that still is a measurement many companies look at before making a decision on picking a framework or library, with good reason.
 
@@ -97,7 +97,6 @@ Long live Hooks, it's a revolution in React this year, if you don't believe me, 
 [React Hooks - Reducers](https://www.telerik.com/blogs/how-to-use-basic-react-hooks-for-reducers)
 
 As well, if you are using the KendoReact library in your web development and are looking for a Hooks version of your favorite StackBlitz demos for KendoReact, I have a growing list of demos I have converted to use Hooks over on Dev.to: [KendoReact Components (Functional Hook Style)](https://dev.to/httpjunkie/kendoreact-components-functional-hooks-style-2h2e) as well as an article that encourages developers to get started with Hooks ASAP: [Can I Use react Hooks yet?](https://dev.to/httpjunkie/can-i-use-react-hooks-yet-35o9)
-
 
 ### The Biggest Impact on React Considering JavaScript
 
