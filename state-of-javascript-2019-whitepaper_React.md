@@ -2,16 +2,18 @@
 
 React is continuing to dominate the web in 2019. A pretty clear measurement, npm downloads show numbers that indicate React is not only holding it's position as the most downloaded and used SPA framework, but it actually shows a healthy growth.
 
-What sets React apart from other front-end frameworks is it's commitment to doing one thing very well. That one thing, is components and managing their state. Most other frameworks like Angular and Ember try to give you everything you need right out of the box, they each have their respective purposes. React is lazar focused on the component model. They let the developer choose their own solution for routing and data models and by doing this it makes the framework more flexible helps to create a higher rate of adoption.
+What sets React apart from other front-end frameworks is it's commitment to doing one thing very well. That one thing is components, their composition and managing their state. Other frameworks take a different and more all inclusive approach or try to help the developer get straight to working with the framework with minimal setup, both are features that help propel those frameworks. React, however; is laser focused on the component model. They let the developer choose their own solution for routing and data models and other acoutramonts and by doing this it makes the framework more flexible helps to create a higher rate of adoption.
 
-React isn't really a framework, but it's definitely getting framework-esque features as of late. Lazy loading components, built in state management with support from React Hooks and things like Suspense are all features I point out to show we are entering framework territory. But React is looked at as more of a solution to one part of the web development process. React is the king of reusable components and it's rather controversial at first but much more respected form of writing HTML using JSX puts your markup right inside your JavaScript. 
+React isn't really considered a framework, specifically because it's choice to focus on the components, but it's definitely getting framework-esque features as of late. Lazy loading components, built in state management with support from React Hooks and things like Suspense are all features I point out to show we are entering framework territory. But React is looked at as more of a solution to one part of the web development process and even these things I speak about that come out of the box are centered around building reusable components. 
 
-JSX if made a web standard would be a brilliant model for universal components in HTML and JavaScript. That very topic is talked about in one of the [latest React Podcast episodes](https://reactpodcast.simplecast.fm/33), saying that React could become transcendent rather than slowly decay like most frameworks by taking the component model that they have introduced and getting it added as a first class construct in browser manufacturers. They note that this is not impossible. But by doing so React could become defacto web technology and achieve transcendence!
+One of React's decisions early on was to use something called JSX, rather controversial at first, it's proven to be a superior form of writing HTML for React components and puts your markup right inside your JavaScript. 
+
+If JSX and React's component model could make for a brilliant model for building universal components in HTML and JavaScript. That very topic is talked about in one of the [latest React Podcast episodes](https://reactpodcast.simplecast.fm/33), saying that React could become transcendent rather than slowly decay like most frameworks by taking the component model that they have introduced and getting it added as a first class construct in browser manufacturers. They note that this is not impossible. But by doing so React could become defacto web technology and achieve transcendence!
 
 With all of the work done around React's components and making them super simple to write using functional components and ES6 style syntax. One could see this transcendence idea come to life, but let's not get too ahead of ourselves yet, most libraries and frameworks have a shelf life of 3 to 5 years. React is knocking at that door now, the question is, will it become transcendent unlike any other frontend framework or will be phased out eventually by new frameworks like Vue?
 
 ## React's Range of Application
-React's range of applications is wide. You can use it for building desktop apps, mobile apps and of course web apps. Most web frameworks have a hard time breaking into this cross genre development area. Between React, React-Native and even things like Preact, we are seeing React gain the ability to go wherever it wants and it's because of the decisions to not strive to be a framework, it doesn't need a router, data model or anything out of the box that does not contribute to working with components. This is a major attribute of React versus it's closest competitors.
+React's range of applications is wide. You can use it for building desktop apps, mobile apps and of course web apps. Most web frameworks have a hard time breaking into this cross genre development area. Between React, React-Native and even things like [Preact](https://preactjs.com/) (a light version of React), we are seeing React gain the ability to go wherever it wants and it's because of the decisions to not strive to be a framework, it doesn't need a router, data model or anything out of the box that does not contribute to working with components. This is a major attribute of React versus it's closest competitors.
 
 ![](https://i.imgur.com/JruoIDx.png)
 
@@ -71,6 +73,8 @@ When React Hooks became available it meant that you could now use Hooks to tap i
 
 In 2018 we bore witness to a major master plan laid out release by release by the React team. It should be noted that each release was a minor release, meaning the semver in the fact that we never bump the major number of the release which is synonymous with wide breaking changes. Everything they did, they did as minor releases. This is important to note because, in order to roll out the changes that I am going to tell you about and breaking the old way of doing things, the React team ensured that each new features released were, for the most part, backwards compatible and work side by side with existing features.
 
+We also saw an update to React's most popular CLI tool Create React App, which we covered in detail in our [Hello Create React App 2.0](https://www.telerik.com/blogs/hello-create-react-app-2) article back in October of 2018.
+
 Below is the React minor releases from 2018
 
 - [16.3 (Mar 29th, 2018) New Lifecycles and Context API](https://reactjs.org/blog/2018/03/29/react-v-16-3.html)
@@ -80,7 +84,7 @@ Below is the React minor releases from 2018
 - [16.6 (Oct 23, 2018) Lazy, Memo & contextType](https://reactjs.org/blog/2018/10/23/react-v-16-6.html)
 - [16.7 (Dec 19, 2018) Bug fixes and patches (No Hooks yet)](https://reactjs.org/blog/2018/12/19/react-v-16-7.html)
 
-First release of 2019 should be the React 16.8 and should include the infamous React Hooks we are all waiting for, but don't let that keep you from using them. You can always install the latest React alpha using:
+The first release of 2019 should be React 16.8 including the infamous React Hooks we are all waiting for, but don't let that keep you from using them. You can always install the latest React alpha using:
 
 ```
 npm install react@next react-dom@next
@@ -100,6 +104,6 @@ As well, if you are using the KendoReact library in your web development and are
 
 ### The Biggest Impact on React Considering JavaScript
 
-React has always done things a little bit different than anyone else. The most popular state management library in JavaScript is Redux, which is completely separate from React in the fact that it is framework agnostic, you can use it with Angular, Vue, React, Vanilla JS, whatever. It's one of the reasons why Redux is so popular, as well we has other tools that although not tied to React, owe their popularity to the fact that they are standard tools for most people building React applications. GraphQL is the along with Redux are finding a great footing in 2019 and dominate usage because of the fact that they are not specific to React. Look specifically for GraphQL to make a major contribution to JavaScript and become a prolific way of building APIs in 2019.
+React has always done things a little bit different than anyone else. The most popular state management library in JavaScript is Redux, which is completely separate from React in the fact that it is framework agnostic, you can use it with Angular, Vue, React, Vanilla JS, whatever. It's one of the reasons why Redux is so popular, as well we has other tools that although not tied to React, owe their popularity to the fact that they are standard tools for most people building React applications. [GraphQL](https://graphql.org/) is the along with Redux are finding a great footing in 2019 and dominate usage because of the fact that they are not specific to React. Look specifically for GraphQL to make a major contribution to JavaScript and become a prolific way of building APIs in 2019.
 
 This is a huge win for the JavaScript community and ecosystem, having tools that are agnostic but also help make up a strong ecosystem around React gets a kind of double bump factor. They are used because they are standard in React, but again their utility is seen by other folks not even using React. This year will be nothing short of amazing when it comes to the adoption of these technologies.
