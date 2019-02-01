@@ -1,6 +1,6 @@
 ## React
 
-React is continuing to dominate the web in 2019. A pretty clear measurement, npm downloads show numbers that indicate React is not only holding it's position as the most downloaded and used SPA framework, but it actually shows a healthy growth.
+React is continuing to see growth in 2019. A pretty clear measurement is npm downloads which show numbers that indicate React is not only holding it's position as the most downloaded and used SPA framework, but continues to show healthy growth. There are a lot of things I think contribute to this consistent growth but the main thing I believe is React's consistency over the years.
 
 What sets React apart from other front-end frameworks is it's commitment to doing one thing very well. That one thing is components, their composition and managing their state. Other frameworks take a different and more all inclusive approach or try to help the developer get straight to working with the framework with minimal setup, both are features that help propel those frameworks. React, however; is laser focused on the component model. They let the developer choose their own solution for routing and data models and other acoutramonts and by doing this it makes the framework more flexible helps to create a higher rate of adoption.
 
