@@ -76,11 +76,17 @@ Below is the React minor releases from 2018
 - [16.3 (Mar 29th, 2018) New Lifecycles and Context API](https://reactjs.org/blog/2018/03/29/react-v-16-3.html)
 - [16.4 (May 23rd, 2018) Pointer Events](https://reactjs.org/blog/2018/05/23/react-v-16-4.html)
 - [16.5 (Sep 5th, 2018) React Profiler and Suspense](https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html)
-- [Create React App 2 (Oct 01, 2018)]https://reactjs.org/blog/2018/10/01/create-react-app-v2.html()
-- 16.6 (Oct 23, 2018)
-- 16.7 (Dec 19, 2018)
+- [Create React App 2 (Oct 01, 2018)](https://reactjs.org/blog/2018/10/01/create-react-app-v2.html)
+- [16.6 (Oct 23, 2018) Lazy, Memo & contextType](https://reactjs.org/blog/2018/10/23/react-v-16-6.html)
+- [16.7 (Dec 19, 2018) Bug fixes and patches (No Hooks yet)](https://reactjs.org/blog/2018/12/19/react-v-16-7.html)
 
-Back to the first release of 2018, we had something called Context API finally get shipped, it meant we could share data using a provider and allow a tree or groupd of components in our application share the same context. The initial implementation used tags that would allow you to wrap a number of components and provide them all with this context. As you can imagine this was a step in the right direction, but in colex scenarios this can start to breakdown having to wrap providers and consumer tags around areas of the code where you wanted to have access to that context.
+First release of 2019 should be the React 16.8 and should include the infamous React Hooks we are all waiting for, but don't let that keep you from using them. You can always install the latest React alpha using:
+
+```
+npm install react@next react-dom@next
+```
+
+Back to the first release of 2018, we had something called Context API finally get shipped, it meant we could share data using a provider and allow a tree or group of components in our application share the same context. The initial implementation used tags that would allow you to wrap a number of components and provide them all with this context. As you can imagine this was a step in the right direction, but in complex scenarios this can start to breakdown having to wrap providers and consumer tags around areas of the code where you wanted to have access to that context.
 
 Hooks brought us the `useContext` hook and overnight we all breathed a sigh of relief.
 
