@@ -12,7 +12,7 @@ If JSX and React's component model could make for a brilliant model for building
 
 With all of the work done around React's components and making them super simple to write using functional components and ES6 style syntax. One could see this transcendence idea come to life, but let's not get too ahead of ourselves yet, most libraries and frameworks have a shelf life of 3 to 5 years. React is knocking at that door now, the question is, will it become transcendent unlike any other frontend framework or will be phased out eventually by new frameworks like Vue?
 
-## React's Range of Application
+### React's Range of Application
 React's range of applications is wide. You can use it for building desktop apps, mobile apps and of course web apps. Most web frameworks have a hard time breaking into this cross genre development area. Between React, React-Native and even things like [Preact](https://preactjs.com/) (a light version of React), we are seeing React gain the ability to go wherever it wants and it's because of the decisions to not strive to be a framework, it doesn't need a router, data model or anything out of the box that does not contribute to working with components. This is a major attribute of React versus it's closest competitors.
 
 ![](https://i.imgur.com/JruoIDx.png)
