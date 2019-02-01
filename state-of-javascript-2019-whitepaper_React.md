@@ -129,3 +129,7 @@ it will be a huge win for the JavaScript community and ecosystem as a whole, not
 Hooks are already inspiring other areas of JavaScript and to be honest the concept or Hooks are not new with React. Other libraries are already using something similar.
 
 Check out @Getify's [TNG-Hooks](https://github.com/getify/TNG-Hooks), [how to build your own React Hooks](https://reactjs.org/docs/hooks-custom.html) and one of the [collections of Hooks on Github](https://github.com/nikgraf/react-hooks). Hooks is having an impact on how we can organize, write and share JavaScript.
+
+Another area of React tht I think is the next logical progression for a lot of React developers is something called [Next JS](https://nextjs.org/) which is an amazing offering to help with server-side react. There are several crash courses on YouTube if you have not heard of it. This is a minimalist framework for rendering React on the server. Helps to automatically code split, do hot routing, file based routing and mapping of routes available.
+
+2019 is going to be an amazing year for React.
