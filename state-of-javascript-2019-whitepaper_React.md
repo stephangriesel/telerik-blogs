@@ -25,7 +25,7 @@ As mentioned, React has picked up a gang of support in 2018, but what I would no
 
 ![](https://i.imgur.com/CXCC8XE.png)
 
-A great metric to follow is npm downloads for comparisons to other frameworksand I think is a good indication that React continues to be a force in the JavaScript developer community and continues to be a pick from a popularity standpoint.
+A great metric to follow is npm downloads for comparisons to other frameworks and I think is a good indication that React continues to be a force in the JavaScript developer community and continues to be a pick from a popularity standpoint.
 
 I think npm stats are the best thing we have to determine the popularity of the different JavaScript front-end frameworks, but there are other surveys and polls out there that can help us understand where React has come from 2018 and where it's going in 2019. Specifically, the [State Of JavaScript's 2018 survey](https://stateofjs.com).
 
