@@ -1,4 +1,4 @@
-## React
+![](https://i.imgur.com/K9eL8k6.png)
 
 React is continuing to see growth in 2019. A pretty clear measurement is npm downloads which show numbers that indicate React is not only holding it's position as the most downloaded and used SPA framework, but continues to show healthy growth. There are a lot of things I think contribute to this consistent growth but the main thing I believe is React's consistency over the years.
 
