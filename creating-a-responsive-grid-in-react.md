@@ -9,7 +9,7 @@ In our first article we started by learning how to setup some basic responsive l
 
 Our starting point will be a StackBlitz demo which is simply a fork of the demo where we left off in the last article. I would recommend making a fork of this demo if you plan to follow along. Otherwise, just read on and understand that you can open up any of the demos I provide to play with the code at any stopping point in the article. I will provide several demos at various points in this article.
 
-[STACKBLITZ RESPONSIVE GRID DEMO 00](https://stackblitz.com/edit/react-responsive-grid-1)
+[STACKBLITZ RESPONSIVE GRID DEMO 01](https://stackblitz.com/edit/react-responsive-grid-1)
 
 Our application to start with should look like the image below:
 
@@ -57,8 +57,33 @@ const Companies = () => {
 export default Companies;
 ```
 
-Nothing too complex here, we need to import react and our company list. We create a functional component that simply maps over the companies list and sticks the name value inside of a div. This is repeated for each company and now we can think about how we will go from this, to building a flexible grid for each of the images instead. 
+Nothing too complex here, we import react and our company list. We create a functional component that simply maps over the companies list and sticks the name value inside of a div. This is repeated for each company and now we can think about how we will go from this, to building a flexible grid for each of the images instead.
+
+Now let's add the following import to the `main.js` page:
+
+```
+import Companies from './Companies';
+```
+
+And display our Companies component below our information about Kendo. The div with the class name of `kendo-details` will now look like the code sample below:
+
+```
+<div className='kendo-details'>
+    <h2>React Components</h2>
+    <p>Building UI for business apps is hard, even on React. Make it easy with our native React UI and DataViz components.</p>
+    <h2>Companies Using Kendo</h2>
+    <Companies />
+</div>
+```
+
+At this point in time and if you have been following along, your demo will match the StackBlitz below:
+
+[STACKBLITZ RESPONSIVE GRID DEMO 02](https://stackblitz.com/edit/react-responsive-grid-2)
+
+## Let's Talk About the Images
 
 The images in this list are `600 x 600 px` and we don't want to show them at that resolution, so I wanted to just loop over the names to ensure our logic and code was working. I actually want to have a different image for each breakpoint, but let's take baby steps to get there. This would mean having 600 pixels be the size of our images to show above large breakpoints. 300 pixels would be the size of our images above the medium breakpoint and until the large breakpoint. And finally, our images on small would be 150 pixels wide.
+
+But for now, we can just resize them to take up 100% of their space.
 
 
