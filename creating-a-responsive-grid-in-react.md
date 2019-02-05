@@ -21,9 +21,7 @@ I'm going to mockup something that we can try and build that will utilize this g
 
 I'm going to fork our demo and start working on our first set of changes.
 
-First order of business is to add the package we want to use for a flexbox grid solution: `react-flexbox-grid`.
-
-Next we need to create a list of companies in a json file that we can repeat over. And would would be wise to just get a list of names to repeat on the page for every company. Our `companies.json` files will simply contain an array of objects. Each object is a company, it has a name and url for an image. I will upload an image for each company to Imgur.com that we can use for our URL.
+First order of business is to create a list of companies in a json file that we can repeat over. And would would be wise to just get a list of names to repeat on the page for every company. Our `companies.json` files will simply contain an array of objects. Each object is a company, it has a name and url for an image. I will upload an image for each company to Imgur.com that we can use for our URL.
 
 We add a `companiesList.json` file.
 
@@ -86,4 +84,36 @@ The images in this list are `600 x 600 px` and we don't want to show them at tha
 
 But for now, we can just resize them to take up 100% of their space.
 
+Let's add the package we want to use for a flexbox grid solution: `react-simple-flex-grid`. I selected this package for it's ese of use. I tried out several packages for react that provided a similar component model. Instead of creating div's, we will create `<Row></Row>` and `<Col></Col>` tags. This library although simple let's us do some complex stuff. To create a grid we are going to use only one Row. Inside that Row tag, we are going to repeat our a Col component for every item in our list. We can then provide instructions for each breakpoint. 
 
+Here is how I want to use their component API:
+
+Working off the default 12 column Grid, I want:
+- At XSmall: Each Col component will take up 6 columns of each row
+- At Small: Each Col component will take up 4 columns of each row
+- At Medium: Each Col component will take up 3 columns of each row
+- At Large: Each Col component will take up 2 columns of each row
+- At XLarge: Each Col component will take up 2 columns of each row
+
+This Also Means: 
+- At XSmall: There will be 2 images per row
+- At Small: There will be 3 images per row
+- At Medium: There will be 4 images per row
+- At Large: There will be 6 images per row
+- At XLarge: There will be 6 images per row
+
+To do this, we will update the piece of JavaScript that maps the companyList to generate what we need to use the components supplied by `react-simple-flex-grid`. By default, the breakpoints are:
+
+- XSmall: 0-767
+- Small: 768-991
+- Medium: 992-1199
+- Large: 1200-1599
+- XLarge: 1600-infinity
+
+
+```
+<Row>
+   <Col span={6}>Column</Col>
+   <Col span={6}>Column</Col>
+</Row>
+```
