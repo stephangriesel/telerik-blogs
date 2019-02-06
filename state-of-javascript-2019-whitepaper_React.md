@@ -33,7 +33,7 @@ With all of the work done around React's components and making them super simple
 ## React's Range of Application
 React's range of applications is wide. You can use it for building desktop apps, mobile apps and of course web apps. Most web frameworks have a hard time breaking into this cross genre development area. Between React, React-Native and even things like [Preact](https://preactjs.com/) (a light version of React), we are seeing React gain the ability to go wherever it wants and it's because of the decisions to not strive to be a framework, it doesn't need a router, data model or anything out of the box that does not contribute to working with components. This is a major attribute of React versus it's closest competitors.
 
-![](https://i.imgur.com/JruoIDx.png)
+![](https://i.imgur.com/JkTOzpC.png)
 
 Check out for yourself and play around with the npm trends graph to see how your favorite libraries stack up. The above graph is a screenshot from npm trends where I ran one of the most common trend analysis when it comes to front end frameworks, pitting [React vs Angular vs Vue](https://www.npmtrends.com/angular-vs-ember-source-vs-react-vs-vue) against each other. 
 
