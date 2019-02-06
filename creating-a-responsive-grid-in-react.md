@@ -75,7 +75,6 @@ And display our Companies component below our information about Kendo. The div w
 ```
 
 At this point in time and if you have been following along, your demo will match the StackBlitz below:
-
 [STACKBLITZ RESPONSIVE GRID DEMO 02](https://stackblitz.com/edit/react-responsive-grid-2)
 
 ## Let's Talk About the Images
@@ -110,10 +109,44 @@ To do this, we will update the piece of JavaScript that maps the companyList to 
 - Large: 1200-1599
 - XLarge: 1600-infinity
 
+With all of that in mind, just by glancing at the GitHub or NPM page for the `react-simple-flex-grid`, you should see that the JSX we need to write would be:
 
 ```
-<Row>
-   <Col span={6}>Column</Col>
-   <Col span={6}>Column</Col>
+<Row gutter={40}>
+  {companyList.map(co => 
+    <Col 
+      xs={{ span: 6 }} sm={{ span: 4 }} md={{ span: 3 }}
+      lg={{ span: 2 }} xl={{ span: 1 }}
+    >{co.name}</Col>
+  )}
 </Row>
 ```
+
+If we were to describe what our grid would look like above the medium breakpoint and below the large breakpoint, it would look like this:
+
+![](https://i.imgur.com/2QXWHNu.gif)
+
+But with just text inside each column, it looks nothing like what we want, so let's add the images. Update your code on the Companies component to return the following JSX:
+```
+const Companies = () => {
+  return (
+    <Row gutter={40}>
+      {(companyList).map(co => 
+        <Col 
+          xs={{ span: 6 }} sm={{ span: 4 }} md={{ span: 3 }}
+          lg={{ span: 2 }} xl={{ span: 1 }}
+        ><img src={`${co.image}.jpg`} width="100%"/></Col>
+      )}
+    </Row>
+  );
+}
+```
+
+At this point in time and if you have been following along, your demo will match the StackBlitz below:
+[STACKBLITZ RESPONSIVE GRID DEMO 03](https://stackblitz.com/edit/react-responsive-grid-3)
+
+Now that we have a better way of laying out our page, I want to rethink our layout. The custom work we did with the media queries in our CSS is not that pretty and in React it's much better to write clear concise code. Even when it comes to CSS. I think that with this new simple grid system we can achieve a better looking layout if we get can get rid of some of the CSS we wrote before and use these Row and Col components instead.
+
+I point us back to the [React Simple Flex Grid GitHub page](https://github.com/abraztsov/ReactSimpleFlexGrid) and look over the examples again. What I would like to do is have the KendoReact Image, Details and Companies each bea able to be on their own line until we hit the medium breakpoint. Then I want the Image and Details to take the top column and the Companies to take up the full row below them.
+
+This layout right here looks good to me:
