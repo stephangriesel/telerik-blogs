@@ -2,7 +2,7 @@ In our first article we started by learning how to setup some basic responsive l
 
 Our starting point will be a StackBlitz demo which is simply a fork of the demo where we left off in the last article. I would recommend making a fork of this demo if you plan to follow along. Otherwise, just read on and understand that you can open up any of the demos I provide to play with the code at any stopping point in the article. I will provide several demos at various points in this article.
 
-<iframe width="100%" height="400" src="https://stackblitz.com/edit/react-responsive-grid-1?file=main.js&amp;view=editor&amp;ctl=1"></iframe>
+[StackBlitz Demo Link 1](https://stackblitz.com/edit/react-responsive-grid-1?file=main.js&view=editor&ctl=1)
 
 Our application to start with should look like the image below:
 
@@ -61,7 +61,7 @@ And display our Companies component below our information about Kendo. The div w
 
 At this point in time and if you have been following along, your demo will match the StackBlitz below:
 
-<iframe width="100%" height="400" src="https://stackblitz.com/edit/react-responsive-grid-2?file=main.js&amp;view=editor&amp;ctl=1"></iframe>
+[StackBlitz Demo Link 2](https://stackblitz.com/edit/react-responsive-grid-2?file=main.js&view=editor&ctl=1)
 
 ## Let's Talk About the Images
 
@@ -129,7 +129,7 @@ But with just text inside each column, it looks nothing like what we want, so le
 
 At this point in time and if you have been following along, your demo will match the StackBlitz below:
 
-<iframe width="100%" height="400" src="https://stackblitz.com/edit/react-responsive-grid-3?file=main.js&amp;view=editor&amp;ctl=1"></iframe>
+[StackBlitz Demo Link 3](https://stackblitz.com/edit/react-responsive-grid-3?file=main.js&view=editor&ctl=1)
 
 Now that we have a better way of laying out our page, I want to rethink our Flexbox layout. The custom work we did with the media queries in our CSS is not that pretty and it's much better to write clear concise code, including CSS. When I look back at the navbar and main code, I can't imagine really understanding it unless I wrote it. Also I don't think our goal is to write the CSS we need for the grid ourselves. That could be an entire article in itself. What we want is some type of component that can abstract the details of building a Flexbox Grid and make that technology available in a simple React Component system. I'm never shy about throwing code away. So let's take out the trash
 
@@ -246,4 +246,4 @@ That brings us to the end of this part of the series. So far we have gone over i
 
 Below is our final StackBlitz demo and the product of this refactoring exercise. If I were in charge of building this application out fully this would be a great place to start and we would have tools that can aid us to tackle everyday responsive Beauvoir and layout in our application
 
-<iframe width="100%" height="400" src="https://stackblitz.com/edit/react-responsive-grid-4?file=main.js&amp;view=editor&amp;ctl=1"></iframe>
+[StackBlitz Demo Link 4](https://stackblitz.com/edit/react-responsive-grid-4?file=main.js&view=editor&ctl=1)
