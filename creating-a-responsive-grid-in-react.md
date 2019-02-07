@@ -6,7 +6,7 @@ Our starting point will be a StackBlitz demo which is simply a fork of the demo 
 
 Our application to start with should look like the image below:
 
-![](https://i.imgur.com/etEIlNo.gif)
+![Initial Look of Application](https://i.imgur.com/etEIlNo.gif)
 
 It's not going to win any awards, but we are not really focusing on look and feel yet, we are still getting our sea legs in this constantly moving and resizing responsive world. And we have already learned some very basic layout techniques to build on. With that said, in this part of the blog series I want to focus on creating a responsive grid that we can use in our application so that we don't have to bring in something like Bootstrap just to use their grid.
 
@@ -110,7 +110,7 @@ With all of that in mind, just by glancing at the GitHub or NPM page for the `re
 
 If we were to describe what our grid would look like above the medium breakpoint and below the large breakpoint, it would look like this:
 
-![](https://i.imgur.com/2QXWHNu.gif)
+![Grid Layout Mock-up](https://i.imgur.com/2QXWHNu.gif)
 
 But with just text inside each column, it looks nothing like what we want, so let's add the images. Update your code on the Companies component to return the following JSX:
 
@@ -131,12 +131,119 @@ At this point in time and if you have been following along, your demo will match
 
 <iframe width="100%" height="400" src="https://stackblitz.com/edit/react-responsive-grid-3?file=main.js&amp;view=editor&amp;ctl=1"></iframe>
 
-Now that we have a better way of laying out our page, I want to rethink our layout. The custom work we did with the media queries in our CSS is not that pretty and in React it's much better to write clear concise code, that includes the CSS. I can't look at this code and understand it well unless I wrote it. So that poses a problem for me.
+Now that we have a better way of laying out our page, I want to rethink our Flexbox layout. The custom work we did with the media queries in our CSS is not that pretty and it's much better to write clear concise code, including CSS. When I look back at the navbar and main code, I can't imagine really understanding it unless I wrote it. Also I don't think our goal is to write the CSS we need for the grid ourselves. That could be an entire article in itself. What we want is some type of component that can abstract the details of building a Flexbox Grid and make that technology available in a simple React Component system. I'm never shy about throwing code away. So let's take out the trash
 
-I think that with this new simple grid system we can achieve a similar layout and we get can get rid of some of the confusing CSS we wrote before and use these Row and Col components from ReactSimpleFlexGrid instead.
+I think that with this new simple grid system we can achieve a similar layout and we get can get rid of some of the confusing CSS we wrote before and use these Row and Col components from React Simple Flex Grid instead. We will have some CSS code and it will contain some breakpoints, but lets use the breakpoints that come default in the React Simple Flex Grid. After playing with the screen at different sizes I think my initial idea to have several breakpoints at such small sizes is not exactly what I want in the end. So I am going to remove the breakpoint at 415 pixels. Let's take a look again at what the default breakpoints are for this Grid system.
 
-To save a lot of tedious steps I think the best way to present these new changes using the React Simple Flex Grid is for me to wave a magic wand and show you an updated StackBlitz example that has been refactored.
+*   XSmall: 0-767
+*   Small: 768-991
+*   Medium: 992-1199
+*   Large: 1200-1599
+*   XLarge: 1600-infinity
 
-My idea here is to use our React Simple Flex Grid component instead of our custom Flexbox code we came up with. It will clean up our CSS and our HTML. i will also move the Kendo information section into it's own component called `KendoInfo`
+Looking at this set of breakpoints, I think that we can get away with just having two Header graphics. One of them will show up until 768 pixels. Then we will switch to a smaller square image. I have made two new images to use:
+
+Our **small** image will need to be 767 pixels in width, that's because 767 pixels wide will be the largest it can display before hitting that breakpoint at 768 pixels
+
+Our **medium-up** image will be 300 pixels in width, because that seems like the largest I will want to display that image for now. We could always create another image to serve much larger screens but for the sake of brevity let's go back to just serving small vs medium and higher.
+
+Small: ![](https://i.imgur.com/NPqmOcC.gif) Medium-Up: ![](https://i.imgur.com/kx3lJpV.gif)
+
+To save a lot of tedious steps I think the best way to present these new changes using the React Simple Flex Grid is for me to wave a magic wand and show you an updated StackBlitz example that has been refactored. But I will explain what I have done in this refactor:
+
+My idea here is to use our React Simple Flex Grid component instead of our custom Flexbox code we came up with. It will clean up our CSS and our HTML. I will also move the Kendo information section into it's own component called `KendoInfo` Just like Companies has it's own component. Our `main.js` file should be fairly simple to look at. For this reason I will also put the Responsive image in it's own component, so that it does not clutter the JSX in our it's own component called `KendoInfo` Just like Companies has it's own component. Our `main.js` file.
+
+Moving our `ResponsiveImage` component into a wrapper will also allow us to pass props to it, if needed. We won't do that now, but it's a good idea down the road. For instance, we could pass in an array of images each with a minimum width. This data could be used to generate the `ResponsiveImageSize` components inside the `ResponsiveImage` component. But for now, at least we have abstracted the code and moved it outside of the `main.js` file and segregates it.
+
+Let's take a look at what our cleaned up `main.js` file looks like now:
+
+    const App = () => {
+      const checkIfMediumPlus = useMediaPredicate("(min-width: 768px)");
+      return (
+        <Row gutter={40}>
+          <Col xs={{ span: 12 }} sm={{ span: 2 }}>
+            <MenuWrapper isMediumPlus={checkIfMediumPlus} />
+          </Col>
+          <Col xs={{ span: 12 }} sm={{ span: 10 }} >
+            <Row gutter={0}>
+              <Col xs={{ span: 12 }} sm={{ span: 3 }} md={{ span: 3 }}>
+                <KendoImage />
+              </Col>
+              <Col xs={{ span: 12 }} sm={{ span: 9 }} md={{ span: 9 }}>
+                <KendoInfo />
+              </Col>
+              <Col span={12}>
+                <Companies />
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      );
+    }
+
+This is much easier for anyone to walk into and understand what is going on. So long as they have a basic understanding of how other 12 column grids or maybe they have worked with Bootstrap or Foundation in the past this looks familiar.
+
+As for the `custom.css` file, what I have done is set up a few breakpoints to match the `react-simple-flex-grid` defaults and I painstakingly wen through each breakpoint and wrote some styles for each component. This could be further cleaned up or broken into separate CSS files, but I think it's much easier to read now, and it's very obvious what everything is doing.
+
+    .navbar {
+      background-color: #fff;
+    }
+    .component-responsive-image img {
+      padding: 1em;
+      width: 100%;
+    }
+    .kendo-info {
+      padding: 1em;
+    }
+    .companiesList {
+      padding: 1em;
+      background-color: #efefef;
+    }
+
+    @media screen and (min-width: 0px) {
+      .component-responsive-image img {
+        padding: 0;
+        width: 100%;
+      }
+      .companiesList h2, .kendo-info h2 {
+        margin-top: 0;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .navbar {
+        height: 100vh;
+        padding-top: 1em;
+        background-color: #efefef;
+      }
+      .component-responsive-image {
+        height: 100%;
+      }
+      .component-responsive-image img {
+        padding: 1em;
+        max-width: auto;
+        height: 100%;
+      }
+      .companiesList {
+        background-color: #fff;
+      }
+      .kendo-info {
+        font-size: 1.25em;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      .kendo-info {
+        font-size: 1.5em;
+      }
+    }
+
+Finally, I have done some basic arranging of the files into respective directories:
+
+![New Directory Structure](https://i.imgur.com/0TYzitm.gif)
+
+That brings us to the end of this part of the series. So far we have gone over in our first article how to work with Flexbox manually as well as explored ready to use React Components from the ecosystem to help us achieve responsive behavior without doing all of the work manually. In this article we continue to lean on the ecosystem to find a simple and easy to use grid system so that we can create responsive layout and grids for other purposes like a gallery of images. I hope you feel like you know your way around Responsive React a little better now. It always pays to know how this stuff works under the hood, however, there is no reason in this day and age to roll your own Flexbox grid, doing so once to get the basic understanding is great, bu there are many components out there that can help you do that, it saves a lot of time and grief and it's not hard to change if you move to another solution.
+
+Below is our final StackBlitz demo and the product of this refactoring exercise. If I were in charge of building this application out fully this would be a great place to start and we would have tools that can aid us to tackle everyday responsive Beauvoir and layout in our application
 
 <iframe width="100%" height="400" src="https://stackblitz.com/edit/react-responsive-grid-4?file=main.js&amp;view=editor&amp;ctl=1"></iframe>
