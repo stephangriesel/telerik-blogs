@@ -14,9 +14,9 @@ I'm going to mock-up something that we can try and build that will utilize this 
 
 I'm going to fork our demo and start working on our first set of changes.
 
-First order of business is to create a list of companies in a `.json` file. Before we make the list of logos into a grid, we should first worry about writing some code that will map each company from our list of names into some markup in our JSX. Our `companies.json` files will simply contain an array of objects. Each object is a company, and it has a name and an image url. I will upload an image for each company to `imgur.com` that we can use for our image.
+First order of business is to create a list of companies in a `.json` file. Before we make the list of logos into a grid, we should first worry about writing some code that will map each company from our list of names into some markup in our JSX. Our `companyList.json` files will simply contain an array of objects. Each object is a company, and it has a name and an image url. I will upload an image for each company to `imgur.com` that we can use for our image.
 
-Add a `companiesList.json` file.
+Add a `companyList.json` file.
 
     [
       { "name": "Nasa", "image": "https://imgur.com/RTFOOHR" },
@@ -29,10 +29,10 @@ Add a `companiesList.json` file.
       { "name": "Volvo", "image": "https://imgur.com/hTkpXvw" }
     ]
 
-We need to create a `Companies.jsx` page. These component files don't have to use the `.jsx` format, they could just as well be a `.js` file. I typically use `.jsx` for any new component that returns JSX. Otherwise, I use `.js` that is a convention of mine and you do not have to follow it.
+We need to create a `Companies.jsx` page. These component files don't have to use the `.jsx` format, they could just as well use `.js` as the file extension. When I create a new component, I typically use `.jsx`.
 
     import React from 'react';
-    import companyList from './companiesList.json.json';
+    import companyList from './companyList.json';
 
     const Companies = () => {
       return (
@@ -147,7 +147,13 @@ Our **small** image will need to be 767 pixels in width, that's because 767 pixe
 
 Our **medium-up** image will be 300 pixels in width, because that seems like the largest I will want to display that image for now. We could always create another image to serve much larger screens but for the sake of brevity let's go back to just serving small vs medium and higher.
 
-Small: ![](https://i.imgur.com/NPqmOcC.gif) Medium-Up: ![](https://i.imgur.com/kx3lJpV.gif)
+Small:
+
+![](https://i.imgur.com/NPqmOcC.gif)  
+
+Medium-Up:
+
+![](https://i.imgur.com/IKbwhjG.gif)
 
 To save a lot of tedious steps I think the best way to present these new changes using the React Simple Flex Grid is for me to wave a magic wand and show you an updated StackBlitz example that has been refactored. But I will explain what I have done in this refactor:
 
@@ -183,7 +189,7 @@ Let's take a look at what our cleaned up `main.js` file looks like now:
 
 This is much easier for anyone to walk into and understand what is going on. So long as they have a basic understanding of how other 12 column grids or maybe they have worked with Bootstrap or Foundation in the past this looks familiar.
 
-As for the `custom.css` file, what I have done is set up a few breakpoints to match the `react-simple-flex-grid` defaults and I painstakingly wen through each breakpoint and wrote some styles for each component. This could be further cleaned up or broken into separate CSS files, but I think it's much easier to read now, and it's very obvious what everything is doing.
+As for the `custom.css` file, what I have done is set up a few breakpoints to match the `react-simple-flex-grid` defaults and I painstakingly wen through each breakpoint and wrote some styles for each component. We also increase the text size overall when we bump up to medium and up. it's not perfect, but it's better than what we had before and easy to read and follow as you scan through the document.
 
     .navbar {
       background-color: #fff;
@@ -195,7 +201,7 @@ As for the `custom.css` file, what I have done is set up a few breakpoints to ma
     .kendo-info {
       padding: 1em;
     }
-    .companiesList {
+    .companyList {
       padding: 1em;
       background-color: #efefef;
     }
@@ -205,7 +211,7 @@ As for the `custom.css` file, what I have done is set up a few breakpoints to ma
         padding: 0;
         width: 100%;
       }
-      .companiesList h2, .kendo-info h2 {
+      .companyList h2, .kendo-info h2 {
         margin-top: 0;
       }
     }
@@ -224,7 +230,7 @@ As for the `custom.css` file, what I have done is set up a few breakpoints to ma
         max-width: auto;
         height: 100%;
       }
-      .companiesList {
+      .companyList {
         background-color: #fff;
       }
       .kendo-info {
@@ -240,7 +246,7 @@ As for the `custom.css` file, what I have done is set up a few breakpoints to ma
 
 Finally, I have done some basic arranging of the files into respective directories:
 
-![New Directory Structure](https://i.imgur.com/0TYzitm.gif)
+![New Directory Structure](https://i.imgur.com/0TYzitm.gif)  
 
 That brings us to the end of this part of the series. So far we have gone over in our first article how to work with Flexbox manually as well as explored ready to use React Components from the ecosystem to help us achieve responsive behavior without doing all of the work manually. In this article we continue to lean on the ecosystem to find a simple and easy to use grid system so that we can create responsive layout and grids for other purposes like a gallery of images. I hope you feel like you know your way around Responsive React a little better now. It always pays to know how this stuff works under the hood, however, there is no reason in this day and age to roll your own Flexbox grid, doing so once to get the basic understanding is great, bu there are many components out there that can help you do that, it saves a lot of time and grief and it's not hard to change if you move to another solution.
 
