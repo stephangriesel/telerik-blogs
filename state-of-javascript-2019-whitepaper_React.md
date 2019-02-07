@@ -1,3 +1,10 @@
+---
+published: false
+title: State of JavaScript 2019 (React Portion)
+summary: The state of JavaScript is a whitepaper the Kendo team puts out each year to highlight and discuss the changes in JS and all of the flavors of frameworks.
+keywords: JavaScript, KendoReact, Kendo UI, React, Whitepaper
+---
+
 ![](https://i.imgur.com/K9eL8k6.png)
 
 React is continuing to see growth in 2019. A pretty clear measurement is npm downloads which show numbers that indicate React is not only holding it's position as the most downloaded and used front-end framework, but continues to show continued growth. There are a lot of things I think contribute to it's usage by developers, but I believe that React's consistency over the years plays a huge part.

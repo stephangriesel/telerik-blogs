@@ -1,3 +1,10 @@
+---
+published: false
+title: Creating a Responsive Grid in React
+summary: Learn the basic steps to setup a React application using Flexbox to make a responsive grid.
+keywords: Guide, JavaScript, React, Responsive, Tutorial 
+---
+
 In our first article we started by learning how to setup some basic responsive layout in our React application using Flexbox and media queries. We used a React Hooks npm package to help with breakpoints and another package for helping with responsive images (picture tag), we also showcases the KendoReact Menu component and by the end we had a fairly responsive demo that we can build on in this article. No different from UI, layout takes time and baby steps, we can keep building and working to refactor and make better what we already built as well as learn some new techniques around responsive layout and slowly incorporate those ideas. The next thing we should work on in this application is bringing in some type of responsive grid. I would like to use another npm package to do this, it's called `react-simple-flex-grid`.
 
 Our starting point will be a StackBlitz demo which is simply a fork of the demo where we left off in the last article. I would recommend making a fork of this demo if you plan to follow along. Otherwise, just read on and understand that you can open up any of the demos I provide to play with the code at any stopping point in the article. I will provide several demos at various points in this article.
