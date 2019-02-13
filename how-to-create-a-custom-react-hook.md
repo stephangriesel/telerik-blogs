@@ -11,16 +11,16 @@ If you have not read up on hooks, the end of this article has what I believe to 
 
 ### ReactJS.org Documentation
 
-[React Conf Recap](https://reactjs.org/blog/2018/11/13/react-conf-recap.html)
-[React v16.8: The One With Hooks](https://reactjs.org/blog/2019/02/06/react-v16.8.0.html)
-[Introducing Hooks](https://reactjs.org/docs/hooks-intro.html)
-[API Reference](https://reactjs.org/docs/react-api.html#hooks)
+[React Conf Recap](https://reactjs.org/blog/2018/11/13/react-conf-recap.html)  
+[React v16.8: The One With Hooks](https://reactjs.org/blog/2019/02/06/react-v16.8.0.html)  
+[Introducing Hooks](https://reactjs.org/docs/hooks-intro.html)  
+[API Reference](https://reactjs.org/docs/react-api.html#hooks)  
 
 ### My Basic Hooks Articles
 
-[Basic React Hooks for State and Effects](https://www.telerik.com/blogs/how-to-use-basic-react-hooks-for-state-and-effects)
-[Basic React Hooks for Context](https://www.telerik.com/blogs/how-to-use-basic-react-hooks-for-context)
-[Basic React Hooks for Reducers](https://www.telerik.com/blogs/how-to-use-basic-react-hooks-for-reducers)
+[Basic React Hooks for State and Effects](https://www.telerik.com/blogs/how-to-use-basic-react-hooks-for-state-and-effects)  
+[Basic React Hooks for Context](https://www.telerik.com/blogs/how-to-use-basic-react-hooks-for-context)  
+[Basic React Hooks for Reducers](https://www.telerik.com/blogs/how-to-use-basic-react-hooks-for-reducers)  
 
 
 ## Let's Revisit The Basic Hook
