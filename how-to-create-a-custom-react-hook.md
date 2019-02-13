@@ -5,9 +5,9 @@ summary: With the release of React 16.8 now behind us, and learning about basic 
 keywords: JavaScript, React, Custom Hooks, Functions
 ---
 
-Hooks are just functions! Anything that is a function can become a hook. The React team has put lots of information out on how to work with basic and advanced hooks, as well with how to create them yourself. I have been covering the topic for several months and I want to bring everything I know about them together to focus on one topic now. Creating your own custom hook that you can easily share with others and can serve as a template or inspiration for any other custom hooks you decide to create in the future.
+Hooks are just functions! Anything that is a function can become a hook. The React team has put lots of information out on how to work with basic and advanced hooks, as well they have good information on how to create custom Hooks yourself. I have been covering the topic for several months and I want to bring everything I know about them together to focus on one topic now. Creating your own custom hook that you can easily share with others and can serve as a template or inspiration for any other custom Hooks you decide to create. I feel that the documentation on the ReactJS site is exhaustive on the subject, my concern is the lack of a very simple example that I believe will really make the idea click for you.
 
-If you have not read up on hooks, the end of this article has what I believe to be required reading, as well a few articles I have written on the subject. It may be easier to breeze through these articles before we get into custom hooks. I recommend understanding the React Hooks API first, then figuring out how you can create your own hooks, which I cover very simply in this article.
+I take a round about way of getting to this example in this blog post, that is because I want you to be prepared for creating custom hooks, although they are very similar to creating a basic function, there is more information that you need to know before starting to create custom Hooks yourself. If you have not read up on hooks, I have provided some required reading as well a few articles I have written on the subject. It may be easier to breeze through these articles before we get into custom hooks. I recommend understanding the React Hooks API first, then figuring out how you can create your own hooks, which I cover very simply at the end of this article.
 
 ### ReactJS.org Documentation
 
@@ -20,18 +20,17 @@ If you have not read up on hooks, the end of this article has what I believe to 
 
 [Basic React Hooks for State and Effects](https://www.telerik.com/blogs/how-to-use-basic-react-hooks-for-state-and-effects)\
 [Basic React Hooks for Context](https://www.telerik.com/blogs/how-to-use-basic-react-hooks-for-context)\
-[Basic React Hooks for Reducers](https://www.telerik.com/blogs/how-to-use-basic-react-hooks-for-reducers)  
-
+[Basic React Hooks for Reducers](https://www.telerik.com/blogs/how-to-use-basic-react-hooks-for-reducers) 
 
 ## Let's Revisit The Basic Hook
 
-If you feel that you have sufficient knowledge of basic Hooks, you can [skip directly to creating a custom Hook](#create-a-custom-hook-of-our-own).
+If you feel that you have sufficient knowledge of basic Hooks, you can skip directly to [creating custom Hooks](#create-a-custom-hook-of-our-own).
 
-I learned while reading up on Hooks on the [ReactJS.org docs](https://reactjs.org/docs) that there are two ways of using `useEffect`. You can use it [without cleanup](https://reactjs.org/docs/hooks-effect.html#effects-without-cleanup) or [with cleanup](https://reactjs.org/docs/hooks-effect.html#effects-with-cleanup). These are terms I expect anyone at this stage of working with hooks to either know or to take a few minutes to understand with the links provided.
+Without going through all of the basic Hooks again, I think we just need to revisit one of them. The `useEffect` Hook. I learned while reading up on Hooks on the [ReactJS.org docs](https://reactjs.org/docs) that there are two ways of using `useEffect`. You can use it [without cleanup](https://reactjs.org/docs/hooks-effect.html#effects-without-cleanup) or [with cleanup](https://reactjs.org/docs/hooks-effect.html#effects-with-cleanup). These are terms I expect anyone at this stage of working with hooks to either know or to take a few minutes to understand with the links I just provided.
 
-Side effects, in classes went in one of many lifecycle methods like: `componentDidMount` or `componentDidUpdate`. In cases where we had sometimes duplicated code in both of those methods(perform same effect for mounting and updating) we can now do these things inside a functional component and we can do it with one method called `useEffect`. 
+With classes and before Hooks were available, side effects were placed in one of many lifecycle methods like: `componentDidMount` or `componentDidUpdate`. In cases where we have duplicated code in both of those methods(performing the same effect for mounting and updating) we can now do these things inside a functional component and we can do it with just one Hook. That's right, I'm talking about `useEffect`. 
 
-By using `useEffect`, we tell React that your component needs to do something after the component renders. It runs both after the first render and after every update. In my previous articles I only talked about side effects without cleanup, so we need to start our learning today understanding how to allow a functional component to have a side effect with cleanup. I think that in order to understand how to create our own Hook, we need to completely understand `useEffect`.
+`useEffect` tells React that our component needs to do something after the component renders. It runs after the first render and after every update. In my previous articles I only talk about side effects without cleanup, so we need to start our learning today understanding how to allow a functional component to have a side effect with cleanup. I think that in order to understand how to create our own Hook, we need to completely understand `useEffect` because not only is it a canonical example of a Hook, but we will use it within our custom Hook later.
 
 Like I said, some effects do not need cleanup, they are simple, like the ones we have already learned, like updating the document title.
 
@@ -41,7 +40,7 @@ useEffect(() => {
 });
 ```
 
-If you return a function from `useEffect`, you can optionally do some cleanup. A situation where you subscribe to something may need to run an unsubscribe as part of the effects cleanup. React performs this cleanup on unmount. 
+If you do need cleanup to run, you can return a function from `useEffect`, this is optional, but allows you to run some code after your effect and before any new effect runs. A situation where you subscribe to something may need an unsubscribe as part of the effects cleanup process. React will perform this cleanup on unmount. 
 
 ```
 useEffect(() => {
@@ -53,9 +52,9 @@ useEffect(() => {
 });
 ```
 
-The effect above will run on every render more than one time. React cleans up effects from the previous render before running the effects of the next render. For an explanation on [why Hooks run on each update](https://reactjs.org/docs/hooks-effect.html#explanation-why-effects-run-on-each-update), in the ReactJS Docs. This behavior can be opted out of. 
+The effect above will run on every render more than one time. React cleans up effects from the previous render before running the effects of the next render, this should be noted. For an explanation on [why Hooks run on each update](https://reactjs.org/docs/hooks-effect.html#explanation-why-effects-run-on-each-update), check out the ReactJS Docs. Remember though, this behavior can be opted out of if it causes performance issues. 
 
-We can also [optimize performance by skipping effects with an optional argument](https://reactjs.org/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects), for instance, maybe we don't want to run the subscribe/unsubscribe effect unless the user id has changed.
+We can also [optimize performance by skipping effects with an optional argument](https://reactjs.org/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects), for instance, maybe we don't want to run the subscribe/unsubscribe effect unless the some id has changed. Check out the example below to understand how this can be done, it's fairly simple!
 
 ```
 useEffect(() => {
@@ -67,13 +66,13 @@ useEffect(() => {
 }, [props.something.id]); // re-subscribe only if props.something.id changes
 ```
 
-I would also like to mention that if you have unrelated logic inside your `useEffect` try refactoring the unrelated code out into it's own `useEffect`. You can have as many `useEffect` calls as you would like. For instance, both of the `useEffect` calls above could be inside the same functional component.
+I would also like to mention that if you have unrelated logic inside your `useEffect`, you should try refactoring the unrelated code into it's own `useEffect`. You can have as many `useEffect` calls as you would like. For instance, both of the `useEffect` calls above could be inside the same functional component. This is allowed.
 
-Hooks allow splitting up code based on what it is doing rather than what lifecycle method it's in which creates a mixing of concerns. React applies each effect in the order they are specified.
+Hooks allow splitting up code based on what it is doing rather than what lifecycle method it's in, when we only had classes and lifecycle methods, this created a mixing of concerns. Now, using multiple `useEffect` methods, React can apply each effect in the order they are specified. This is a huge benefit for organizing code in your application.
 
-I'm stating obvious rules for using Hooks I know. However if we want to understand when and why we would use a custom Hook, we need to understand these rules and ideas around Hooks. It will help us realize what code needs to go into a Hook and what code doesn't. Also we now kow that we can probably have multiple calls to multiple custom Hooks right alongside calls to `useEffect` after all, they are all just Hooks and as we said we can call as many as we like.
+I want to talk about one more thing before we create our own custom Hook, I want to go over five rules for using Hooks, these are passed down to us from the React team, so they are very important to know and will help you to keep from creating buggy code. It will help us realize what code needs to go into a Hook and what code doesn't.
 
-## More Important Rules About Hooks
+## Five Important Rules For Hooks
 
 Before we create our own Hook, let's review a few of the major rules we must always follow.
 
@@ -191,4 +190,8 @@ Here are the two StackBlitz examples side by side if you want to fork them and p
 1. [Extract a Custom Hook from Existing Code](https://stackblitz.com/edit/react-custom-hook?file=Counter.js)
 2. [Import a Hook From NPM or Co-located File](https://stackblitz.com/edit/react-custom-hook-npm?file=Counter.js)
 
-Big thanks to [Amit Solanki](https://github.com/iamsolankiamit) who made this [document title Hook](https://github.com/rehooks/document-title) available as an npm package. It's a great and simple example of how to create a React Hook at the most basic level and I couldn't think of a better first Hook to introduce you to in order to get you thinking about creating your own custom Hooks!
+Big thanks to [Amit Solanki](https://github.com/iamsolankiamit) who made this [document title Hook](https://github.com/rehooks/document-title) available as an npm package. It's a great and simple example of how to create a React Hook at the most basic level and I couldn't think of a better first Hook to introduce you to in order to get you thinking about creating your own custom Hooks! The easiest way to discover new React Hooks that you can either copy and paste into your code or npm install is to visit these GitHub related links:
+
+[Copy Paste Popular React Hooks](https://reacthooks.surge.sh/)
+[Awesome React Hooks](https://github.com/rehooks/awesome-react-hooks)
+[Collection of React Hooks](https://github.com/nikgraf/react-hooks)
