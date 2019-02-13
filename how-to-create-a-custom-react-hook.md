@@ -23,9 +23,11 @@ If you have not read up on hooks, the end of this article has what I believe to 
 [Basic React Hooks for Reducers](https://www.telerik.com/blogs/how-to-use-basic-react-hooks-for-reducers)
 
 
-## Let's Understand The Basic Hook
+## Let's Revisit The Basic Hook
 
-I learned while reading up on Hooks on the ReactJS.org docs that there are two ways of using `useEffect`. You can use it [without cleanup](https://reactjs.org/docs/hooks-effect.html#effects-without-cleanup) or [with cleanup](https://reactjs.org/docs/hooks-effect.html#effects-with-cleanup). These are terms I expect anyone at this stage of working with hooks to either know or to take a few minutes to understand with the links provided.
+If you feel that you have sufficient knowledge of basic Hooks, you can [skip directly to creating a custom Hook](#create-a-custom-hook-of-our-own).
+
+I learned while reading up on Hooks on the [ReactJS.org docs](https://reactjs.org/docs) that there are two ways of using `useEffect`. You can use it [without cleanup](https://reactjs.org/docs/hooks-effect.html#effects-without-cleanup) or [with cleanup](https://reactjs.org/docs/hooks-effect.html#effects-with-cleanup). These are terms I expect anyone at this stage of working with hooks to either know or to take a few minutes to understand with the links provided.
 
 Side effects, in classes went in one of many lifecycle methods like: `componentDidMount` or `componentDidUpdate`. In cases where we had sometimes duplicated code in both of those methods(perform same effect for mounting and updating) we can now do these things inside a functional component and we can do it with one method called `useEffect`. 
 
@@ -83,7 +85,7 @@ Before we create our own Hook, let's review a few of the major rules we must alw
 
 If you would like, you can enforce these rules in your team with an [ES Lint plugin](https://reactjs.org/docs/hooks-rules.html#eslint-plugin). Also on that same page [there are good explanations](https://reactjs.org/docs/hooks-rules.html#explanation) on why these rules are required. Feel free to read up on that, it's about a 5 minute read.
 
-## Custom Hooks
+## Create a Custom Hook of Our Own
 
 I really liked something that was tweeted out today.. "Hooks unleash a level of composition well above and beyond anything we've seen". What I would have you understand about Hooks is that all of the great changes that we have seen with Classes and how we have so many options for composition. It's all available in Hooks. This means that now our hands are not tied when it comes to the composition of functional components in React. And this is the biggest takeaway.
 
