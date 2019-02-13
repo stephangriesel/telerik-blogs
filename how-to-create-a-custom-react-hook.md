@@ -127,9 +127,9 @@ const useDocumentTitle = (title) => {
 }
 ```
 
-Above you see that all we really need this Hook to take as an argument is some string of text, we call it `title`. Inside the Hook we call the `useEffect` Hook and set the title so long as the title has changed, our second argument to the `useEffect` method will perform that check before updating document title. You mean, creating a custom Hook is as easy as creating a function. And that function can reference any other Hook. Hot damn. Creating custom Hooks is easier than I thought.
+Above you see that all we really need this Hook to take as an argument is a string of text which we will call `title`. Inside the Hook we call React Core's basic `useEffect` Hook and set the title so long as the title has changed. The second argument to `useEffect` will perform that check for us and only update the title if it's local state is different than what we are passing in. You mean, creating a custom Hook is as easy as creating a function? Yep, it's that easy at it's core, and that function can reference any other Hook. Hot damn... Creating custom Hooks is easier than we thought!
 
-Let's review what our overall functional component will now look like, you will see that I left the old call to `useEffect` commented out, above it is how we use the custom Hook for this instead. This can be viewed in an [updated StackBlitz demo](https://stackblitz.com/edit/react-custom-hook?file=Counter.js) as well:
+Let's review what our overall functional component will now look like, you will see that I left the old call to `useEffect` commented out, above it is how we use the custom Hook for this instead. This can be viewed in an [updated StackBlitz demo](https://stackblitz.com/edit/react-custom-hook?file=Counter.js):
 
 ```
 import React, { Component, useState, useEffect } from 'react';
@@ -183,14 +183,16 @@ function Counter() {
 export default Counter;
 ```
 
-This is fabulous and notice that I don't have to import `useEffect` in my functional component, because the Hook that I imported from the npm package has that import, so if I don't need to `useEffect` in my functional component because the `useDocumentTitle` Hook does it for me, I can omit that and write less code. I hope this illustrates and you see the power in using and creating custom React Hooks.
+This is fabulous, but I also want you to notice that I don't have to import `useEffect` in my functional component now, because the Hook that I imported from the npm package takes care of that, so if I don't need to `useEffect` in my functional component because the `useDocumentTitle` Hook does it for me, I can omit that import. I hope this illustrates well the very basics of creating a custom React Hook and that you see the power even with such a simple example.
 
 Here are the two StackBlitz examples side by side if you want to fork them and play around!
 
 1. [Extract a Custom Hook from Existing Code](https://stackblitz.com/edit/react-custom-hook?file=Counter.js)
 2. [Import a Hook From NPM or Co-located File](https://stackblitz.com/edit/react-custom-hook-npm?file=Counter.js)
 
-Big thanks to [Amit Solanki](https://github.com/iamsolankiamit) who made this [document title Hook](https://github.com/rehooks/document-title) available as an npm package. It's a great and simple example of how to create a React Hook at the most basic level and I couldn't think of a better first Hook to introduce you to in order to get you thinking about creating your own custom Hooks! The easiest way to discover new React Hooks that you can either copy and paste into your code or npm install is to visit these GitHub related links:
+Big thanks to [Amit Solanki](https://github.com/iamsolankiamit) who made this [document title Hook](https://github.com/rehooks/document-title) available as an npm package as well as [Adam Rackis](https://twitter.com/AdamRackis) for contributing such a profound outlook on Hooks in a brilliant tweet that inspired me to write about the subject. The developer community has embraced Hooks and that cannot always be said about new features of a framework when they first are released. i want to also thank the React Team for the way they take their time with these features and ensure they get ample feedback from the community as well as take a gradual adoption strategy for rolling this amazing and revolutionary stuff out!
+
+This demo is the most simple example I could think of to illustrate how to create a React Hook and I couldn't think of a better first Hook to introduce you to in order to get you thinking about creating your own custom Hooks! The easiest way to discover more React Hooks that you can either copy and paste into your code or npm install is to visit these GitHub related links:
 
 [Copy Paste Popular React Hooks](https://reacthooks.surge.sh/)
 [Awesome React Hooks](https://github.com/rehooks/awesome-react-hooks)
