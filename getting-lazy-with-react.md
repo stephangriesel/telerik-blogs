@@ -9,7 +9,7 @@ React has been adding many amazing features over the past year that make working
 
 I started my learning out in the React blog with an article highlighting the release of this feature: [React v16.6.0: lazy, memo and contextType](https://reactjs.org/blog/2018/10/23/react-v-16-6.html). This document links to many other documentation resources to help you understand code splitting and how it is part of the React Suspense and Lazy features.
 
-A few must see videos on the subject are [Jared Palmer](https://www.youtube.com/watch?v=SCQgE4mTnjU) and <a href="">Dan Abramov's</a> React Conf 2018 talks on suspense as well as <a href="">Andrew Clark's "React Suspense"</a> talk at ZEIT day in San Francisco.
+A few must see videos on the subject are [Jared Palmer](https://www.youtube.com/watch?v=SCQgE4mTnjU) and [Dan Abramov's React Conf 2018 talk](https://www.youtube.com/watch?v=z-6JC0_cOns&t=837s) on suspense as well as [Andrew Clark's "React Suspense"](https://www.youtube.com/watch?v=z-6JC0_cOns&t=837s) talk at ZEIT day in San Francisco.
 
 ## What Does This Mean for Developers
 
