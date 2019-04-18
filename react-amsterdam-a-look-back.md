@@ -70,6 +70,10 @@ Take any file in any repo of your on GitHub. Like for instance, this article I a
 Replace `http://github.com` with `http://github.githistory.xyz` resulting in the following string:
 `https://github.githistory.xyz/httpJunkie/telerik-blogs/blob/master/react-amsterdam-a-look-back.md`
 
+Here is a look at what Git Histroy has done with my file from my repo:
+
+<!-- animation of Git History -->
+
 If you are not instantly in love with this, you don't exist. I showed my son and he was mezmirized, we noted that if I were to have saved more often, I would have a much more granular step through. This is my nomination for the next years GitNation Open Source Awards (which means nothing, because I'm in no way affiliated with GitNation lol). I just think it is people like Rodrigo who will be highlighted for their contributions to open source. Truly amazing, have I said that enough?
 
 ## Tech Regrets at Spectrum (Max Stoiber)
@@ -134,4 +138,4 @@ I stayed in the Wilbautstraat area just 4 stops off the metro from Central Stati
 
 ## React 2020
 
-If you are planning on attending the React Amsterdam 2020 event, mark your calendars now, it will be April 16th and 17th. 
+If you are planning on attending the React Amsterdam 2020 event, mark your calendars now, it will be April 16th and 17th. I know I'm missing other amazing things that happened, but hopefully this can serve as a guide if you were not able to attend or maybe a tool you can use to convince your boss to go next year. If you do, stop by our booth and talk to me, I will defintiely be going back in April of next year!
