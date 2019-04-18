@@ -78,8 +78,24 @@ There was no better way to end the conferenc off than to have three amazing talk
 [An SVG's Tale](https://www.youtube.com/watch?v=4KfAS3zrvX8&t=21167s) like I said is my favorite talk. Elizabet is a senior UX designer at Optum in Ireland. If I could give an award for the most inspiring talk at React Amsterdam and the most likely to get me started playing with an old but amazingly robust technology that that been given a new lease thanks to React, it's SVG. I have always been a huge fan of SVG, but after Elizabet's talk I have so many ideas of how I can use SVG's properly and dynamically in my React applications using inline methods or with JSX and components. It's possible with React to create animations and styling that under the React hood may be complex but can allow developers not as well versed in SVG to easily use them through your components. Beyond SVG and React, Elizabet showcases a few of her side projects over the years. One of them is an app that you can record your own vocals over dank hip-hop beats. This speaker definitely blew my mind and I wish I could have spotted her after the talk to give her a big thank you. Truly amazing presentation, she had everyone out of their seat cheering including myself and at other times fighting back tears because her (fictional) story was so amazing and warm!
 
 ### The GraphQL Devleoper Experience (Peggy Rayzis)
+Peggy Rayzis has to be the most compelling speaker on the topic of GraphQL especially for beginners like myself. It was one of the talks I was most amped up to hear and as happens in most conferences I got side tracked and missed it 🙁. But listening back today I was not surprised at all when Peggy told us that she lived in Amsterdam for a month last year and that it is her favorite city in the world. I think most of us who came out for our first time to Amsterdam have the same feeling. I cannot think of a better backdrop for this event. It was my introduction to Europe proper! I enjoyed taking in all of the knowledge that Peggy brings to us on the subject of GraphQL and she has a great perspective as an employee for [Apollo](https://www.apollographql.com/) where she works as an Engineering Manager. This company builds the most amazing implementation of GraphQL. Apollo helps us bridge the gap betwen application and API and I don't want to spoil her talk so I simply suggest checking this one out if you are interested in learning about GraphQL.
 
 ### Painting pixels with WebGL with Hooks (Ashi Krishnan)
+
+## React Native
+
+Although I have "et, slept and brethed" the General track at React Amsterdam I was not able to attend much of the React native track. I feel that I am being quite incomplete and unfair by not outlining the talks from this track but I simply am the wrong person to give you the best presepctive on this track. I have never used React Native but I have heard so many reat things about it and did catch a few bits and pieces while I was at React Amsterdam. If I could point to one talk specifically that I think helped me understand it better it would be the presentation given by the React nattive core team member [Parashuram](https://github.com/nparashuram) which just so happens to also be the first talk of this React native track called [Building React Native](https://www.youtube.com/watch?v=NCLkLCvpwm4&t=934s). The entire React Native track can be [viewed in it's entirety on YouTube](https://www.youtube.com/watch?v=NCLkLCvpwm4). Below is a complete list of all of the React Native talks so that you can skip directly to the talk you want to hear! If you a web guy or gal like me, i would suggest also checking out Native Web Apps by [Florian Rival](https://github.com/4ian).
+
+- [Building React Native](https://www.youtube.com/watch?v=NCLkLCvpwm4&t=934s) (Parashuram N)
+- [Practical Performance for React Native](https://www.youtube.com/watch?v=NCLkLCvpwm4&t=2844s) (Anna Doubková)
+- [Sharing Code Between React and React Native](https://www.youtube.com/watch?v=NCLkLCvpwm4&t=6291s): What Not to Share (Ben Ellerby)
+- [Building for a Bigger World Than Mobile](https://www.youtube.com/watch?v=NCLkLCvpwm4&t=8150s) (Wouter Van Den Broek)
+- [Advice Lounge](https://www.youtube.com/watch?v=NCLkLCvpwm4&t=9801s) (Panel Discussion)
+- [Make Your React Native Apps Accessible](https://www.youtube.com/watch?v=NCLkLCvpwm4&t=17234s) (Ankita Kulkarni)
+- [Native Web Apps](https://www.youtube.com/watch?v=NCLkLCvpwm4&t=18906s): React and WebAssembly to Rewrite Native Apps (Florian Rival)
+- [Full-Stack React Native](https://www.youtube.com/watch?v=NCLkLCvpwm4&t=20715s) in the Era of Serverless Computing (Nader Dabit)
+- [Demystifying The Complex Animations Creation Process](https://www.youtube.com/watch?v=NCLkLCvpwm4&t=25644s) in React Native (Vladimir Novick)
+- [React Native App Rollout](https://www.youtube.com/watch?v=NCLkLCvpwm4&t=27212s) - an Alternative Approach (Adam Terlson)
 
 ## Open Source Awards
 
