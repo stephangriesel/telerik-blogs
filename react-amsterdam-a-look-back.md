@@ -15,19 +15,22 @@ The Kromhouthal used to be a major marine engine manufacturing plant. I showed u
 
 Although not at the infamous Kromhouthal, part of React Amsterdam (the workshops) took place nearby, in the shadow of A'DAM Lookout at the [Tolhuistuin](https://tolhuistuin.nl/) a restaurant also fronting the IJ with amazing views for the workshop attendees. 
 
-## Conference Day Highlights
+## Conference Talk Highlights
 
 There were so many great presentation and Lightening talks, I want to take some time to highlight what I think were the most valuable ones that I attended. Bieng someone who works with a lot of UI, layout and presentation in React, I am a big proponent of the fundamentals and general knowledge. i start to get lost when it comes to the advanced and deep dive topics outside of UI and basic React, and what's great about this conference is that they have something for everybody. Let's look at some of those talks and review them here:
 
 ### Requisite React (Kent C Dodds)
+
 The conference started off strong with [Kent C Dodds](kentcdodds.com/about/) on the main stage with a talk called ["Requisite React"](https://www.youtube.com/watch?v=4KfAS3zrvX8&t=1405s/). In his own words, this talk is about: "Taking a few steps back and thinking about the usefulness of the fundamentals". We learn how to fix a droopy facuet head (with pics), and learn how understanding abstractions help us to be more effective when using them, not only in real life 😊 but also in our code. This means being mindful of our abstractions and understanding that each one ultimately has some type of cost. My favortie abstraction that he dives into is that of JSX and I won't ruin the talk, but getting a look at how we can easily convert our Babel into raw JS, we are able to see under the hood and understand this abstraction better. I felt a lot of the talk was mostly about how to level up as a React developer and if you were a boss or manager who sent several of your developers out to [React Amsterdam](https://react.amsterdam/), this is exactly the type of information you want out of the gate!
 
 ### Refactoring React (Siddarth Kshetrapal)
+
 No time is wasted getting into another very valuable fundamentals based talk around [refactoring in React](https://www.youtube.com/watch?v=4KfAS3zrvX8&t=3268s), again we are defintiely getting our value right out of the gate with many helpful tips this time from [Siddarth Kshetrapel](https://github.com/siddharthkp/) an independent devloper from India who does an amazing job refactoring a login and authentication form. Starting with class components and constrtuctors with a fair amount of prop drilling involved, we refactor this code quickly into something more manageable and future proof. Some of the techniques that he talks about are spreading props, using methods passed down in props the proper way and how to ensure that we are not overriding prop values for methods or aplying them due to not managing our props correctly. He touches on principles like "Single Responsibility" and "Seperation of Concerns". I really like most the parts where he talks about understanding about mixing of controlled vs uncontrolled state and how to avoid this. Pick one, he likes uncontrolled components, and this gives us the chance to get into higher order components or better yet, React Hooks. `useSmartness()` FTW!
 
 So those talks were very code heavy and I was already in the mood for some straight up slide talk! My favorite kiind fo talks! I don't have to strain my eyes and I still learn some new stuff I didn't know before. 
 
 ### A Common Design Language (Andrey Okonetchnikov)
+
 [Andrey](https://github.com/okonet) who also did an amzing workshop on the same topic of Design Systems in React, puts all the pertinent info into a very clean and easy to understand talk on building a common design language and reducing the choices of options between typography, spacing and color to create a design language system. Using a common design language systems allows for reusability of design choices across multiple products and logos. This can be something as simple as he points out as the design of the German government logos vs Austrian government logos. One has a clear design system and language the other although creative lacks distinguishable characteristics that would show a clear alignment of all of it's properties through a common design language.
 
 <!-- photos of logos side by side -->
@@ -35,10 +38,12 @@ So those talks were very code heavy and I was already in the mood for some strai
 [Andrey's presentation](https://www.youtube.com/watch?v=4KfAS3zrvX8&t=6900s) had many strong visuals like above that helped to show us how a design system language can help not only your developers and designers talk, but also help your organization speak to it's clients and customers clearly and with great meaning and commonality. The presentation leads into design languagges for digital products and this is where we tie in the component oriented capabilities of React that make it easy to define a common language with your UI achieveing similar results as discussed before but now within digital products. A truly amazing talk and I really suggest taking the time to watch.
 
 ### Designing With React (Mark Dalgleish)
+
 Following teh previous design language presentation, we nicely transition into a talk from Mark Dalgleish on [designing in React](https://www.youtube.com/watch?v=4KfAS3zrvX8&t=8562s). Using design systems paired with React Mark is able to design in the final medium. Because React is so component oriented, it allows us to build our own domain specific language. I have seen first hand at companies I have worked at like Tesla capitalize on the ability to do this in React and other web technologies. Mark has some other examples of this idea spreading throughout our industry as many companies build their own design systems. Mark's major points backup the ability to capture the design intent from our design systems and applying them to the web and native apps. [Seek style-guide](https://github.com/seek-oss/seek-style-guide) is something that Mark's company has created and is a great resource and example of a design system for React executed remarkably.
 
 Another amazing resource that Mark shows off is the [React Sketch.app](http://airbnb.io/react-sketchapp/) which renders React components to Sketch helping to design with real data, in react with real component code and manage your design system implemented in React. Watch the video for information on an amazing npm package they created called `html-sketchapp`. I will let you discover that amazing gem on your own. 
 
+### Server Side Rendering Talks
 So far I'm 4 talks in, and I have watched the majority of the talks running back to our booth each break to interact with the attendees talk components. For someone like me who just likes to be totally immersed in technology and talking about it, this event really allowed me to get into my element. One of the things I love about my company and my position is that they let me geek out about React and not feel like I have to be a pushy sales person. Aside from questions I had to field about our own component library, most of the talk at the conference was around fundamentals, bleeding edge features and the React roadmap, what's coming next. just an amazing conference to really get knee deep in JavaScript and React more specifically.
 
 The next four talks are all on Server Side Rendering (SSR) using frameworks like Next JS for pre-rendering, Crystalize for the backend to create lightening fast scalable SSR React apps, the upsides and downsides of creating apps that use SSR, topics like rehydration, time to interactive and other things related to how our larger e-commerce sites render. In the e-commerce world, shaving milliseconds or maybe even full seconds off of load time can be very valuable. These 4 talks take you on a journey through the benefits and gotchas of SSR.
@@ -48,6 +53,51 @@ The next four talks are all on Server Side Rendering (SSR) using frameworks like
 - [Speeding up React SSR](https://www.youtube.com/watch?v=4KfAS3zrvX8&t=11452s) (David Mark Clements)
 - [Demystifying Server-Rendered React Apps](https://www.youtube.com/watch?v=4KfAS3zrvX8&t=11870s) (Fernando Porazzi) 
 
+## Lightening Round ... Start
+There were four amazing lightenting talks, I caught two of them in person and watched the other two from home today and I have to say that I walked away from all of them with golden nuggets from each topic that I could use to explore that topic more on my own. below are the talks and a link to them on YouTube.
+
+- [Fetch Like a Boss With React Async](https://youtu.be/4KfAS3zrvX8?t=15862) (Gert Hengeveld)
+- [Microjob Multithreading](https://youtu.be/4KfAS3zrvX8?t=16267) (Vincenzo Ferrari)
+- [URQL Powerful and Simple GraphQL](https://youtu.be/4KfAS3zrvX8?t=16656) (Andy Richardson)
+- [Showcase of Git History](https://github.com/pomber/git-history) (Rodrigo Pombo)
+
+I'm a huge fan of the library showcased in that last talk called [Git-history](https://github.com/pomber/git-history) and after being reminded of it's awesomeness as React Amsterdam, I will be playing with this package and using it in some of my upcomign talks and demos to show the change when refactoring class based components to functional components with Hooks, I think this will provide a great visual aid in teaching on this subject.
+
+## Tech Regrets at Spectrum (Max Stoiber)
+I admit that the SSR talks were a little bit over my head, but next up was Max Stoiber to talk about his Tech Regrets at Spectrum which was acquired by GitHub. Another great talk and I don't want to spoil the regrets that Max goes over and I suggest taking a listen to this talk on your own, it's such a great lesson learned from hind sight.
+
+## Scaling Applications with Microfrontends (Max Gallo)
+Every once in a while there are talks at a conference where I think the guys on stage are on another level than me. TO be honest I ahve never built any microfrontends and if I did, I would have no idea how to scale them. When he asked for us to raise our hands if we had even heard of them, I was under strict contract to keep my hand down as I had never even heard of this. Once he started explaining the idea, I understood from a very high level. I like how his talk sets up three main tracks for understanding this microfrontends thing. Why do we need them? What is it? and how do they work under the hood. I was going to need all the hadn holding I could get for this talk.
+
+Microfrontends are like a mix between microservices and the actual frontend single page application. Microfrontends are a way of splitting up the codebase of the frontend over many teams, obviously using some type of design system to keep them all similar in style and branding, we have already heard how to do this with extra benefit from React.
+
+## The Ladies of React
+There was no better way to end the conferenc off than to have three amazing talks by pioneering women in the React space. My absolute favorite talk from React Amsterdam was from Elizabet Oliveira.
+
+### An SVG's Tale (Elizabet Oliveira)
+
+### The GraphQL Devleoper Experience (Peggy Rayzis)
+
+### Painting pixels with WebGL with Hooks (Ashi Krishnan)
+
+## Open Source Awards
+
+Since React Amsterdam at heart is a JavaScript conference, a love for open source is at the heart of every conference run by GitNation, they really do a great job of highlighting and recognizing great open source projects. This year they had several categories and you can watch the awards ceremony for more context.
+
+### Breakthrough of The Year
+Taken home by [Michel Weststrate](https://github.com/mweststrate) a Nederlander and main contributor of [Immer](https://github.com/immerjs/immer) the popular open source library used to create next mutatable state by mutating the current state. I have just barely scraped the surface of what this library can help with, but I have used it to make returning state from my reducers in React used to mutate (while keeping imutable) my local component state. i'm sure there are many other great uses for this library and I think it was well desrving of the award. Nominees for this award were [Linaria](https://github.com/callstack/linaria), [Formik](https://github.com/jaredpalmer/formik) and [React-navigation](https://github.com/react-navigation/react-navigation).
+
+### Most Exciting Technology
+This award was given to the [VX open source library](https://github.com/hshoff/vx) that makes it easy to combine D3 charts into React to build amazing visual components. A demo can be seen on [vx-demo.now.sh](https://vx-demo.now.sh/gallery) and shows how easy it is to make both your own reusable chart library or your own slick custom one-off charts. A representitive was not available to take t his award home, but much props go out to the VX team for making such an amazing contribution to JS open source.
+
+### Fun Side Project of The Year
+The title of the award says it all, this is just an open source contribution that GitNation believed to be fun, light hearted and amazing in it's own right. The nominees for this category were [React95](https://github.com/React95/React95) (a play on Windows 95) is a React component library with Windows95 style UI. This would have also been my pick although I think both projects are absolutely fantastic. The next nominee was [React-insta-stories](https://github.com/mohitk05/react-insta-stories) A React component for Instagram like stories. The component responds to actions like tap on right side for next story, on left for previous and tap and hold for pause. Custom time duration for each story can be provided. The winner for this award was React95. Gabriel Daltoso and Alysson Dos Santos (São Paulo - Brazil) both came up on stage to accept this very well deserved award!
+
+### Most Impactful Contribution to The Community.
+The winner of this award was [React-testing-library](https://github.com/kentcdodds/react-testing-library). Other nominees for this award were [Detox](https://github.com/wix/Detox) and [React-navigation](https://github.com/react-navigation/react-navigation), and [Downshift](https://github.com/downshift-js/downshift) and are all very impactful in our JS community. It should be and is noted by the announcers on stage that two of these libraries have a main contributor in common with Kent C Dodds. And if he wasn't given an award himself for most impactful and influential person of React Amsterdam, he should as well with a few other speakers who did both workshops and speaking at the conference, it just so happens that kent was able to pull off a trifecta in also winning an open source award, but there were many people wearing many hats speaking, volunteering, teaching workshops and overall just living and breathing this conference.
+
+### Productivity Booster
+The final award category is all about being productive as a developer. The winner is near and dear to my heart as someone who loves to write in markdown, I'm writing this article now in markdown using VS Code and I use git to record my progress and iterations of each and every article I write for this blog. As well, I write many presentations and sldie decks and love using markdown for those as well. As you can guess, the winner of this award went to [MDX Deck](https://github.com/jxnblk/mdx-deck) and was accepted by [Time Neutkens](https://github.com/timneutkens) and delivered to [Brent jackson](https://github.com/jxnblk). Other nominees for this category were [Formik](https://github.com/jaredpalmer/formik), [React-cosmos](https://github.com/react-cosmos/react-cosmos), and [React-table](https://github.com/tannerlinsley/react-table). 
 
 ## React is Amsterdam
 
