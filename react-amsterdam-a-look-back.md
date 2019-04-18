@@ -53,15 +53,24 @@ The next four talks are all on Server Side Rendering (SSR) using frameworks like
 - [Speeding up React SSR](https://www.youtube.com/watch?v=4KfAS3zrvX8&t=11452s) (David Mark Clements)
 - [Demystifying Server-Rendered React Apps](https://www.youtube.com/watch?v=4KfAS3zrvX8&t=11870s) (Fernando Porazzi) 
 
-## Lightening Round ... Start
-There were four amazing lightenting talks, I caught two of them in person and watched the other two from home today and I have to say that I walked away from all of them with golden nuggets from each topic that I could use to explore that topic more on my own. below are the talks and a link to them on YouTube.
+## Lightening Round .. One .. Start! (Read Fast)
+OK, really fast, let me tell you about the amazing lightening round talks, read this section really fast to get an idea of what lightenign rounds are like. There were four amazing lightenting talks, I caught two of them in person and watched the other two from home today and I have to say that I walked away from all of them with golden nuggets from each topic that I could use to explore that topic more on my own. below are the talks and a link to them on YouTube.
 
 - [Fetch Like a Boss With React Async](https://youtu.be/4KfAS3zrvX8?t=15862) (Gert Hengeveld)
 - [Microjob Multithreading](https://youtu.be/4KfAS3zrvX8?t=16267) (Vincenzo Ferrari)
 - [URQL Powerful and Simple GraphQL](https://youtu.be/4KfAS3zrvX8?t=16656) (Andy Richardson)
 - [Showcase of Git History](https://github.com/pomber/git-history) (Rodrigo Pombo)
 
-I'm a huge fan of the library showcased in that last talk called [Git-history](https://github.com/pomber/git-history) and after being reminded of it's awesomeness as React Amsterdam, I will be playing with this package and using it in some of my upcomign talks and demos to show the change when refactoring class based components to functional components with Hooks, I think this will provide a great visual aid in teaching on this subject.
+I'm a huge fan of the library showcased in that last talk called [Git-history](https://github.com/pomber/git-history) and after being reminded of it's awesomeness as React Amsterdam, I will be playing with this package and using it in some of my upcomign talks and demos to show the change when refactoring class based components to functional components with Hooks, I think this will provide a great visual aid in teaching on this subject. It's easy to use, I can show you right here.
+
+Take any file in any repo of your on GitHub. Like for instance, this article I am writing now:
+
+`https://github.com/httpJunkie/telerik-blogs/blob/master/react-amsterdam-a-look-back.md`
+
+Replace `http://github.com` with `http://github.githistory.xyz` resulting in the following string:
+`https://github.githistory.xyz/httpJunkie/telerik-blogs/blob/master/react-amsterdam-a-look-back.md`
+
+If you are not instantly in love with this, you don't exist. I showed my son and he was mezmirized, we noted that if I were to have saved more often, I would have a much more granular step through. This is my nomination for the next years GitNation Open Source Awards (which means nothing, because I'm in no way affiliated with GitNation lol). I just think it is people like Rodrigo who will be highlighted for their contributions to open source. Truly amazing, have I said that enough?
 
 ## Tech Regrets at Spectrum (Max Stoiber)
 I admit that the SSR talks were a little bit over my head, but next up was [Max Stoiber](https://github.com/mxstbr) to talk about his [Tech Regrets at Spectrum](https://www.youtube.com/watch?v=4KfAS3zrvX8&t=17600s) which was acquired by GitHub. Another great talk and I don't want to spoil the regrets that Max goes over and I suggest taking a listen to this talk on your own to get the value of lessons learned from hind sight and his experience building a real world product and shipping it to users.
