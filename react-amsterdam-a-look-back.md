@@ -72,9 +72,10 @@ Every once in a while there are talks at a conference where I think the guys on 
 Microfrontends are like a mix between microservices and the actual frontend single page application. Microfrontends are a way of splitting up the codebase of the frontend over many teams, obviously using some type of design system to keep them all similar in style and branding, we have already heard how to do this with extra benefit from React.
 
 ## The Ladies of React
-There was no better way to end the conferenc off than to have three amazing talks by pioneering women in the React space. My absolute favorite talk from React Amsterdam was from Elizabet Oliveira.
+There was no better way to end the conferenc off than to have three amazing talks by pioneering women in the React space. My absolute favorite talk from React Amsterdam was from Elizabet Oliveira. As well, I was truly inspired by both Peggy and Ashi because I'm slowly getting into GraphQL and to see WebGL and Hooks used together painting pixels has to be one of my runners up for second most inspiring talks at React Amsterdam.
 
 ### An SVG's Tale (Elizabet Oliveira)
+[An SVG's Tale](https://www.youtube.com/watch?v=4KfAS3zrvX8&t=21167s) like I said is my favorite talk. If I could give an award for the most inspiring talk at React Amsterdam and the most likely to get me started playing with an old but amazingly robust technology that that been given a new lease thanks to React, it's SVG. I have always been a huge fan of SVG, but after Elizabet's talk I have so many ideas of how I can incorporate SVG's into my application using JSX and components. It's possible with React to create animations and styling that under the React hood may be complex but can allow developers not as well versed in SVG to easily use them through your components. Beyond SVG and React, Elizabet showcases a few of her side projects over the years. One of them is an app that you can record your own vocals over dank hip-hop beats. This speaker definitely blew my mind and I wish I could have spotted her after the talk to give her a big thank you. Truly amazing presentation, she had everyone out of their seat cheering! 
 
 ### The GraphQL Devleoper Experience (Peggy Rayzis)
 
