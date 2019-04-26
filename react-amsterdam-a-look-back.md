@@ -1,6 +1,6 @@
 ---
 title: React Amsterdam a Look Back
-published: false
+published: true
 description: A look back at React Amsterdam Workshops and Talks.
 tags: React, JavaScript, Amsterdam, Conference
 ---
