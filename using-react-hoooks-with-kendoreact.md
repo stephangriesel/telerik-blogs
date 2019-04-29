@@ -36,7 +36,7 @@ let's get started. The first thing we need to do is to convert the class to a fu
 
     const multiply = (x, y) => { return x * y };  
 
-In our component line 5 would now look like this:
+In our component line 6 would now look like this:
 
     const DialogWrapper = () => {
 
