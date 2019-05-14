@@ -19,11 +19,30 @@ Of course we need to ensure that any grid that we decide to use has options for 
 
 In React we typically will have a wrapper around our component that will allow us to keep track of a single components state. We can utilize this local state to store the information about our sorting, what field we want to sort on and the direction as in ascending or descending. We handle these setting through props and we can easily turn the sorting behavior on and off through a prop called `sortable`. The following StackBlitz example shows a very basic setup where we want to sort our data based on a productName. The React component that we use the following props that we will utilize to do this basic sorting: `sortable`, the default is true, however if you pass false to this prop you will toggle off the sorting feature. But this prop alone is just a switch so to speak. In order to get full sorting capabilities we need to easily be able to change the order of our data and KendoReact makes this very easy with kendo-data-query. 
 
-The [Data Query package](https://www.telerik.com/kendo-react-ui/components/dataquery/) helps when applying the sorting, filtering, grouping, and other aggregate data operations. This helps to keep your component that wraps your grid nice and clean by ensuring that you don't have to write these sometimes basic and othertimes non-trivial operations yourself. You can import the `orderBy` function and immdiately be able to write code that when I click on a product name takes my data that the grid is using and orders it by name. That code would look something like this:
+The [Data Query package](https://www.telerik.com/kendo-react-ui/components/dataquery/) helps when applying the sorting, filtering, grouping, and other aggregate data operations. In React we have the concept of a container component, these container components are the best place to keep track of our state for our grid component, to further help to organize and keep this container component clean by ensuring that you don't have to write all of the code that orders and filters our data for our component, we can import the `orderBy` function use it to sort our data by `productName`. This makes it super easy to ensure that our data is initially loaded with a sort in place, maybe we want to always start off in a state where the data is in reverse alphabetical order. We would have the following setup in our state object:
 
 ```
-
+state = {
+  sort: [
+    { field: 'ProductName', dir: 'desc' }
+  ]
+}
 ```
+
+And now when we create our Grid component in React we just need to pass the data into the grid using the `data` prop and we can use `orderBy` and pass in our settings that we already have stored in our state object:
+```
+render() {
+  return (
+    <Grid data={orderBy(products, this.state.sort)}>
+      <Column field="ProductID" />
+      <Column field="ProductName" title="Product Name" />
+      <Column field="UnitPrice" title="Unit Price" />
+    </Grid>
+  );
+}
+```
+
+Already and with very minimal effort we have sorted our products by `productName` in a descending fashion. So not only is it important to look for these features I spoke about in a grid, but also does the component library come with additional tools to help us work with the data? Not all data grids out there will provide you with the ability to so easily work with your data. Now if we take this sorting situation a little bit further, we want to make sure that we have lifecycle 
 
 ### Virtual Scrolling
 
