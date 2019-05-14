@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: How to Add React Form Validation
 summary: Get up to speed creating your own custom form validation in React components.
 keywords: JavaScript, React, Forms, validation

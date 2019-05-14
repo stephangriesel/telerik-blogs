@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: How to Use Basic React Hooks for Reducers
 description: useReducer hook and a Primer on useRef
 keywords: React, Hooks, Reducers, References, JavaScript

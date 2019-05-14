@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Creating a Responsive Grid in React
 summary: Learn the basic steps to setup a React application using Flexbox to make a responsive grid.
 keywords: Guide, JavaScript, React, Responsive, Tutorial 

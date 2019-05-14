@@ -1,6 +1,6 @@
 ---
 title: Using React Hooks With kendoReact
-published: false
+published: true
 description: Hooks are now stable in React, let's understand how to use them with everyday KendoReact components.
 tags: React, JavaScript, Kendo, Components
 ---

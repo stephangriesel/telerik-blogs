@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Getting Lazy with React
 summary: As your app grows, so does your bundle size. Splitting your bundle can help you lazy-load only the things the user absoutely needs. This can reduce the code needed for an initial load, delaying other loading only when the user asks for it.
 keywords: Guide, JavaScript, React, Lazy-loading, Suspense
