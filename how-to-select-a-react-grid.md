@@ -9,15 +9,23 @@ Finding a workhorse grid for tabular data in your applications is inevitably goi
 
 When we look for a grid, especially in the enterprise, where you are buying several licenses for your key front-end developer needs to have a few things. When talking about these must haves, I'm going to show you these features in KendoReact, just know that there are many options out there and it's just a matter of selecting one that fits all the criteria you want. As I can't know exactly what your porject will entail, you can't always fathom what new features your grid or your application for that matter might end up needing. So ensuring you find a solution that can grow with you and your development needs is priority.
 
-## Must Have Features
+## Must Have Features in a React Grid
 
 As someone who has constantly worked on teams where I have been asked to really push the envelope of what is possible for a grid, I have found the KendoReact grid to always meet my needs and then some. As well there are other grids on the market so let's go through a laundry list of things you should look for in a React Grid. I think mostly about my time building line of business applications for a large auto manufaturer. We had a massive inventory system and many of our views required a grid. These are the features that I would not have been able to work with if I didn't have them.
 
-### 
+### Basic Sort, Filter and Paging Options
 
-### 
+Of course we need to ensure that any grid that we decide to use has options for basic [Sorting](https://www.telerik.com/kendo-react-ui/components/grid/sorting/), [Filtering](https://www.telerik.com/kendo-react-ui/components/grid/filtering/) and [Paging](https://www.telerik.com/kendo-react-ui/components/grid/filtering/). At it's basic we need a grid that will very easily demonstrate how to do each of these. So at a basic level let's see how the KendoReact grid handles these operations.
 
-### 
+In React we typically will have a wrapper around our component that will allow us to keep track of a single components state. We can utilize this local state to store the information about our sorting, what field we want to sort on and the direction as in ascending or descending. We handle these setting through props and we can easily turn the sorting behavior on and off through a prop called `sortable`. The following StackBlitz example shows a very basic setup where we want to sort our data based on a productName. The React component that we use the following props that we will utilize to do this basic sorting: `sortable`, the default is true, however if you pass false to this prop you will toggle off the sorting feature. But this prop alone is just a switch so to speak. In order to get full sorting capabilities we need to easily be able to change the order of our data and KendoReact makes this very easy with kendo-data-query. 
+
+The [Data Query package](https://www.telerik.com/kendo-react-ui/components/dataquery/) helps when applying the sorting, filtering, grouping, and other aggregate data operations. This helps to keep your component that wraps your grid nice and clean by ensuring that you don't have to write these sometimes basic and othertimes non-trivial operations yourself. You can import the `orderBy` function and immdiately be able to write code that when I click on a product name takes my data that the grid is using and orders it by name. That code would look something like this:
+
+```
+
+```
+
+### Virtual Scrolling
 
 ## Playing The Long Game
 
