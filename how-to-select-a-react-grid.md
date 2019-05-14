@@ -17,7 +17,11 @@ We some amazing articles on our blog about performance including one in particul
 
 ## Package Support
 
-All React comonent libraries should give you the ability to install through [npm](https://docs.npmjs.com/about-npm/) or [github](https://help.github.com/en/articles/about-github-package-registry). Currently, KendoReact makes all of their components comsumable via the public npm package registry. We make our packages easily consumable through npm to ensure that if you need to build a demo to show your boss, that's totally fine! As well you can get a free month of support so that you can really test out every aspect of what it would be like developing with the KendoReact library having full 24/7 support. 
+All React comonent libraries should give you the ability to install through [npm](https://docs.npmjs.com/about-npm/) or [github](https://help.github.com/en/articles/about-github-package-registry). Currently, KendoReact makes all of their components comsumable via the public npm package registry. Below is an example of loading a very simple KendoReact component into your project, adding packages and components should be this easy.
+
+![](https://i.imgur.com/QhCdT42.gif)
+
+ We make our packages easily consumable through npm to ensure that if you need to build a demo to show your boss, that's totally fine! As well you can get a free month of support so that you can really test out every aspect of what it would be like developing with the KendoReact library having full 24/7 support. 
 
 ## Touch and Mobile
 
@@ -85,3 +89,4 @@ Knowing that a library has been around for that long, and that new flavors and p
 
 We don't need to spend a lot of time on this one, it's plain and simple. Libraries that are not licensed rarely have any type of support outside of at-will community help. Most big web development shops and enterprise level businesses have tight deadlines and their developers push the technology to the edges, sometimes it's helpful to have someone to reach out to that is an expert on working with the library, we can make those people accessible to you, they run our customer support channels. With KendoReact you have the ability to choose from [several levels of customer support](https://www.telerik.com/purchase/support-plans), something a lot of UI libraries don't make available. It's something we have you covered with on our components, but if you do choose another Grid or component library, this is feature that you will not only need, but will save you time and costly development work by not being able to easily speak to the experts and engineers that build the tool. You may even look further than support and want your component library to have a dedicated team out there on Twitter advocating. These are also people that can help you learn and use the component library.
 
+Overall the Kendo React Grid is highly capable and stacks up on the higher end when compared to other similar component libraries for React. Just take a look at some of the other features that it provides here on the [KendoReact Data Grid (Table) Overview](https://www.telerik.com/kendo-react-ui/components/grid/). That page also has more information on thow to get started with a trial or license. However, we suggest looking around to see what else is out there that competes at this high level and if there are any features that the KendoReact grid does not have, you may find them obn our [KendoReact Roadmap](https://www.telerik.com/kendo-react-ui/roadmap/).
