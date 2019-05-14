@@ -68,6 +68,11 @@ By default, when filtering is enabled, the Grid renders a filter row in its head
 
 Most of the filtering that I want to do can be achieved with a [Custom Filter Cell](https://www.telerik.com/kendo-react-ui/components/grid/filtering/#toc-custom-filter-cell). This technique is poular among different grid options out there and it's easy to understand and it's powerful. 
 
+filtering can also be accomplished similar to how we sorted list earlier in the sorting example. Using a higher order component in conjunction with the process Data Query method, we can manage local data. has its own state and adds the filter, sort, total, and skip props to the Grid to handle its onDataStateChange event. bind to two different Grids using different sets of data without the need for you to write any logic for the filtering, sorting or paging. We won't get fully into paging, but check out this more advacned pattern using HOC's in react. With React Hooks the possibilities are similar but with a more concise syntax. It really is a great time to be a React developer.
+
+Example showing Sorting, Filtering and Paging:
+[StackBlitz Example](https://stackblitz.com/edit/kendoreact-hoc-with-stateful-grid?file=app/main.jsx)
+
 ### Virtual Scrolling
 
 ## Playing The Long Game
