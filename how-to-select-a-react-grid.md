@@ -4,7 +4,7 @@ published: true
 description: Finding a grid for tabular data in your apps is something a lot of us eventually look for as an enterprise level developer. In this article I try to give some insight into what features I look for and why I think the KendoReact Grid fits the bill.
 tags: React, JavaScript, Grid, Components
 ---
-![](https://imgur.com/yP4kQor.gif)
+![](https://imgur.com/qBYop2u.gif)
 
 Finding a workhorse grid for tabular data in your applications is inevitably going to be something you have to figure out as a front-end developer working in any type of enterprise or large company especially when building line of business applications. Understanding what to look for and what features you can envision needing in the future when the client or your boss asks for more features is a good thing to think about up front when choosing your grid.
 
