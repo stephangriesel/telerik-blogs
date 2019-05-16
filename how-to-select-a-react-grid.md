@@ -17,9 +17,9 @@ We have an info on the [Telerik Blog](https://www.telerik.com/blogs/) about meas
 
 ## Package Support
 
-All React comonent libraries should give you the ability to install through [npm](https://docs.npmjs.com/about-npm/) or [github](https://help.github.com/en/articles/about-github-package-registry). Currently, KendoReact makes all of their components comsumable via the public npm package registry. Below is an example of loading a very simple KendoReact component into your project, adding packages and components should be this easy.
+All React comonent libraries should give you the ability to install through [npm](https://docs.npmjs.com/about-npm/) or [github](https://help.github.com/en/articles/about-github-package-registry). Currently, KendoReact makes all of their components comsumable via the public npm package registry. Below is an example of importing and using the KendoReact Grid component into your project, I feel it's one of the easier components to get working.
 
-![](https://i.imgur.com/QhCdT42.gif)
+![](https://imgur.com/XFSD3ZL.gif)
 
  We make our packages easily consumable through npm to ensure that if you need to build a demo to show your boss, that's totally fine! As well you can get a free month of support so that you can really test out every aspect of what it would be like developing with the KendoReact library having full 24/7 support.
 
