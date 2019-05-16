@@ -1,9 +1,10 @@
 ---
 title: What to Look For in a React Grid
 published: true
-description: Finding a grid for tabular data in your apps is something a lot of us eventually look for as an enterprise level developer. In this article I try to give some insight into what features I look for and why the KendoReact Grid fits the bill.
+description: Finding a grid for tabular data in your apps is something a lot of us eventually look for as an enterprise level developer. In this article I try to give some insight into what features I look for and why I think the KendoReact Grid fits the bill.
 tags: React, JavaScript, Grid, Components
 ---
+![](https://imgur.com/yP4kQor.gif)
 
 Finding a workhorse grid for tabular data in your applications is inevitably going to be something you have to figure out as a front-end developer working in any type of enterprise or large company especially when building line of business applications. Understanding what to look for and what features you can envision needing in the future when the client or your boss asks for more features is a good thing to think about up front when choosing your grid.
 
@@ -94,6 +95,6 @@ Knowing that a library has been around for that long, and that new flavors and p
 
 ## Enterprise Level Support
 
-We don't need to spend a lot of time on this one, it's plain and simple. Libraries that are not licensed rarely have any type of support outside of at-will community help. Most big web development shops and enterprise level businesses have tight deadlines and their developers push the technology to the edges, sometimes it's helpful to have someone to reach out to that is an expert on working with the library, we can make those people accessible to you, they run our customer support channels. With KendoReact you have the ability to choose from [several levels of customer support](https://www.telerik.com/purchase/support-plans).
+We don't need to spend a lot of time on this one, it's plain and simple. Libraries that are not licensed rarely have any type of support outside of at-will community help. Most big web development shops and enterprise level businesses have tight deadlines and their developers push the technology to the edges, sometimes it's helpful to have someone to reach out to that is an expert on working with the library, we can make those people accessible to you, they run our customer support channels. With [KendoReact](https://www.telerik.com/kendo-react-ui/) you have the ability to choose from [several levels of customer support](https://www.telerik.com/purchase/support-plans).
 
 Overall the Kendo React Grid is highly capable and stacks up on the higher end when compared to other similar component libraries for React. Just take a look at some of the other features that it provides here on the [KendoReact Data Grid (Table) Overview](https://www.telerik.com/kendo-react-ui/components/grid/). That page also has more information on thow to get started with a trial or license. However, we suggest looking around to see what else is out there that competes at this high level and if there are any features that the KendoReact grid does not have, you may find them obn our [KendoReact Roadmap](https://www.telerik.com/kendo-react-ui/roadmap/).
