@@ -1,7 +1,7 @@
 ---
 title: What to Look For in a React Grid
 published: true
-description: Hooks are now stable in React, let's understand how to use them with everyday KendoReact components.
+description: Finding a grid for tabular data in your apps is something a lot of us eventually look for as an enterprise level developer. In this article I try to give some insight into what features I look for and why the KendoReact Grid fits the bill.
 tags: React, JavaScript, Grid, Components
 ---
 
@@ -76,7 +76,7 @@ Example showing Sorting, Filtering and Paging:
 
 ### Virtual Scrolling
 
-SOmetimes, when we have a large amount of data in our grids. This could be a large numbers of columns or rows, we want to implement virtual scrolling. While the user is scrolling the table, the Grid needs to display only the visible data. In KendoReact, we make virtualized data a reality on both columns and rows. [Column Virtualization](https://www.telerik.com/kendo-react-ui/components/grid/columns/column-virtualization) ensures that columns outside the current visible aria of the grid will not be rendered. 
+Sometimes, when we have a large amount of data in our grids. This could be a large numbers of columns or rows, we want to implement virtual scrolling. While the user is scrolling the table, the Grid needs to display only the visible data. In KendoReact, we make virtualized data a reality on both columns and rows. [Column Virtualization](https://www.telerik.com/kendo-react-ui/components/grid/columns/column-virtualization) ensures that columns outside the current visible aria of the grid will not be rendered. 
 
 As well, the grid has a special scrolling mode called [Virtual Scrolling](https://www.telerik.com/kendo-react-ui/components/grid/scroll-modes/virtual/). It's this scrolling mode that is most useful with large data sets. You can set a prop on the grid called `pageSize`. 
 
