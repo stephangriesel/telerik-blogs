@@ -21,7 +21,7 @@ All React comonent libraries should give you the ability to install through [npm
 
 ![](https://imgur.com/XFSD3ZL.gif)
 
- We make our packages easily consumable through npm to ensure that if you need to build a demo to show your boss, that's totally fine! As well you can get a free month of support so that you can really test out every aspect of what it would be like developing with the KendoReact library having full 24/7 support.
+ We make our packages easily consumable through npm to ensure that if you need to get your hands dirty and build a demo, your just an **`npm install`** away! As well you can get a free month of support during a trial period, so that you can really have the time you need to evaluate the product or you can always just head over to our [Get Started](https://www.telerik.com/kendo-react-ui/getting-started/#toc-project-setup).
 
 ## Must Have Features in a React Grid
 
