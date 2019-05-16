@@ -61,17 +61,15 @@ render() {
 }
 ```
 
-Already and with very minimal effort we have sorted our products by `productName` in a descending fashion. It's important to look for libraries that give you additional tools to work with basic data operations. This additional ecosystem around KendoReact supplies things like data operations, animations and other common utilities that make working with the individual components, like the data grid very easy to do.
+Already and with very minimal effort we have sorted our products by `productName` in a descending fashion. Although I'm not going to go through many code examples, you would see that the KendoReact Grid has many other ways of helping you manage your grid. WE can talk about some of those, just to get an idea of the level of customization you can achieve.
 
-In order to make the individual column sortable we just need to add a few more props that will tell the grid what to do `onSortChange`. This brings us to our next thing to look out for. When searching for a React Grid, you will need to carefully review the API and see what props the grid surfaces for us to work with. The `onSortChange()` is an event that fires when the sorting of the Grid is changed. We handle this event ourself and sort the data using a simple arrow function that updates our state using the `setState()` method in React.
+In order to make the individual column sortable we can use `onSortChange()`, an event that fires when the sorting of the Grid is changed. We handle this event ourself and sort the data using a simple arrow function that updates our state using the `setState()` method in React.
 
 By default, when filtering is enabled, the Grid renders a filter row in its header. Based on the type of data the columns contain, the filter row displays textboxes in each column header where the user can filter string, numeric, or date inputs.
 
 #### Filtering and Paging Examples
 
-Most of the filtering that I want to do can be achieved with a [Custom Filter Cell](https://www.telerik.com/kendo-react-ui/components/grid/filtering/#toc-custom-filter-cell). This technique is poular among different grid options out there and it's easy to understand and it's powerful. 
-
-filtering can also be accomplished similar to how we sorted list earlier in the sorting example. Using a higher order component in conjunction with the process Data Query method, we can manage local data. has its own state and adds the filter, sort, total, and skip props to the Grid to handle its onDataStateChange event. bind to two different Grids using different sets of data without the need for you to write any logic for the filtering, sorting or paging. We won't get fully into paging, but check out this more advacned pattern using HOC's in react. With React Hooks the possibilities are similar but with a more concise syntax. It really is a great time to be a React developer.
+Most of the filtering that I want to do can be achieved with a [Custom Filter Cell](https://www.telerik.com/kendo-react-ui/components/grid/filtering/#toc-custom-filter-cell). This technique is easy to understand and it's powerful. Filtering can also be accomplished similar to how we did with our data earlier in the sorting example. Using a higher order component in conjunction with the `process()` Data Query method, we can manage local data. It has its own state and adds the filter, sort, total, and skip props to the Grid to handle an `onDataStateChange()` event. We can bind to more than one grids if needed using different sets of data without the need for you to write any logic for the filtering, sorting or paging.
 
 Example showing Sorting, Filtering and Paging:
 [StackBlitz Example](https://stackblitz.com/edit/kendoreact-hoc-with-stateful-grid?file=app/main.jsx)
