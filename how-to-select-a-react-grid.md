@@ -25,9 +25,9 @@ All React comonent libraries should give you the ability to install through [npm
 
 ## Must Have Features in a React Grid
 
-As someone who has constantly worked on teams where I have been asked to really push the envelope of what is possible for a grid, I have found the KendoReact grid to always meet my needs and then some. Let's go through a laundry list of things you should look for in a React Grid. I think mostly about my time building line of business applications for a large auto manufaturer. We had a massive inventory system and many of our views required a grid. A lot of my reccomended features come from the many requiremnts I have seen time after time building real grids in real applications.
+As someone who has constantly worked on teams where I have been asked to really push the envelope of what is possible for a grid, I have found the KendoReact grid to always meet my needs and then some. Let's go through a laundry list of things you should look for in a React Grid. I think mostly about my time building line of business applications for a large auto manufaturer. We had a massive inventory system and many of our views required a grid. A lot of my reccomended features come from the many requiremnts I have seen time after time building real grids in real applications. At the very minimum, there are three featuires we can definitely agree tat any grid we look at wil have to do these things.
 
-### Basic Sort, Filter and Paging Options
+### Sort, Filter and Paging
 
 Of course we need to ensure that any grid that we decide to use has options for basic [Sorting](https://www.telerik.com/kendo-react-ui/components/grid/sorting/), [Filtering](https://www.telerik.com/kendo-react-ui/components/grid/filtering/) and [Paging](https://www.telerik.com/kendo-react-ui/components/grid/filtering/). We need a grid that will very easily demonstrate how to do each of these. So at a basic level let's see how the KendoReact grid handles these operations.
 
