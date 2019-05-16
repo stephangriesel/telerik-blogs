@@ -78,11 +78,13 @@ Example showing Sorting, Filtering and Paging:
 
 ### Virtual Scrolling
 
-Sometimes, when we have a large amount of data in our grids. This could be a large numbers of columns or rows, we want to implement virtual scrolling. While the user is scrolling the table, the Grid needs to display only the visible data. In KendoReact, we make virtualized data a reality on both columns and rows. [Column Virtualization](https://www.telerik.com/kendo-react-ui/components/grid/columns/column-virtualization) ensures that columns outside the current visible aria of the grid will not be rendered. 
+Sometimes, when we have a large amount of data in our grids. This could be a large numbers of columns or rows, we want to implement virtual scrolling. While the user is scrolling the table, the Grid needs to display only the visible data. In KendoReact, we make virtualized data a reality on both columns and rows. [Column Virtualization](https://www.telerik.com/kendo-react-ui/components/grid/columns/column-virtualization) ensures that columns outside the current visible aria of the grid will not be rendered.
 
 As well, the grid has a special scrolling mode called [Virtual Scrolling](https://www.telerik.com/kendo-react-ui/components/grid/scroll-modes/virtual/). It's this scrolling mode that is most useful with large data sets. You can set a prop on the grid called `pageSize`. 
 
-In [this demo](https://stackblitz.com/edit/kendoreact-virtual-scroll-mode?file=app/main.jsx), if you open the grid in a new browser window and inspect the grid as you scroll, you will notice the the only rows getting rendered to the view at any one time are only those that you see. Once you scroll past ofther records, they are removed and new records are rendered. Having this type of functionality can mean a boost to grid performance.
+In [this demo](https://stackblitz.com/edit/kendoreact-virtual-scroll-mode?file=app/main.jsx), if you open the grid in a new browser window and inspect the grid (as seen in the animated gif below) as you scroll, you will notice the the only rows getting rendered to the view at any one time are only those that you see. Once you scroll past ofther records, they are removed and new records are rendered. Having this type of functionality can mean a boost to grid performance.
+
+![](https://imgur.com/nOt0wBp.gif)
 
 ## Playing The Long Game
 
