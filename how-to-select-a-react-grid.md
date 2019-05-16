@@ -25,7 +25,7 @@ All React comonent libraries should give you the ability to install through [npm
 
 ## Must Have Features in a React Grid
 
-As someone who has constantly worked on teams where I have been asked to really push the envelope of what is possible for a grid, I have found the KendoReact grid to always meet my needs and then some. As well there are other grids on the market so let's go through a laundry list of things you should look for in a React Grid. I think mostly about my time building line of business applications for a large auto manufaturer. We had a massive inventory system and many of our views required a grid. These are the features that I would not have been able to work with if I didn't have them.
+As someone who has constantly worked on teams where I have been asked to really push the envelope of what is possible for a grid, I have found the KendoReact grid to always meet my needs and then some. Let's go through a laundry list of things you should look for in a React Grid. I think mostly about my time building line of business applications for a large auto manufaturer. We had a massive inventory system and many of our views required a grid. A lot of my reccomended features come from the many requiremnts I have seen time after time building real grids in real applications.
 
 ### Basic Sort, Filter and Paging Options
 
