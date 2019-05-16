@@ -37,7 +37,7 @@ In React we typically will have a wrapper around our component that will allow u
 
 Another thing that we will need for our grid is a library we can use to query data, we can build our own of course, But in KendoReact, we have a package called the [Data Query](https://www.telerik.com/kendo-react-ui/components/dataquery/) package which helps when applying the sorting, filtering, grouping, and other aggregate data operations. It makes methods like `process()`, `orderBy`, and `filterBy` available. These methods are helpful in areas outside your grid component as well, it's just a utility library, but another huge bonus.
 
- In React we have the concept of a container component, these container components are the best place to keep track of our state for our grid component, to further help to organize and keep this container component clean by ensuring that you don't have to write all of the code that orders and filters our data for our component, we can import the `orderBy` function use it to sort our data by `productName`. This makes it super easy to ensure that our data is initially loaded with a sort in place, maybe we want to always start off in a state where the data is in reverse alphabetical order. We would have the following setup in our state object:
+ In React we have the concept of a container component, these container components can be utilized to store and help track our state for the grid component, we can import the `orderBy` function use it to sort our data which we have imported from a `json` file which in turn has a column called `productName`. This makes it easy to loaded our data with default sort already in place, maybe we want to always start off in a state where the data is in reverse alphabetical order. We would have the following setup in our state object:
 
 ```
 state = {
@@ -47,7 +47,7 @@ state = {
 }
 ```
 
-And now when we create our Grid component in React we just need to pass the data into the grid using the `data` prop and we can use `orderBy` and pass in our settings that we already have stored in our state object:
+And now when we create our Grid component in React we just need to pass the data into the grid using the `data` prop, the product of this value is an `orderBy` applied to the json data and as the second argument we can pass in our settings from our state object:
 
 ```
 render() {
