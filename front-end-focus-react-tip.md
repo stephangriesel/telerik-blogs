@@ -5,11 +5,9 @@ summary: Draft for Front-end Focus article tip section for our sponsorship.
 keywords: Guide, JavaScript, React, Hooks, Tutorial 
 ---
 
-Hooks are a new feature of React that allow you to manage state.
-Each slice of state that you want to manage can easily be created using React's new `useState()` method.
-The most typical way of working with this method is to save it's return value using array desctructuring.
+Hooks are a new feature of React that allow you to create slices of state internal application state using React's new `useState()` method. When we use that method, we need a clever way to store it's return values. It returns a stateful value, and a function to update that stateful value and the best way of working with these mutliple values is using [array desctructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment).
 
-Because the `setState()` return value is a stateful value, and a function to update it, without array destructuring, we would have to write JavaScript like the following, in order to work with `useState()`.
+Without array destructuring, we would have to write JavaScript like the following:
 
 ```
 const countState = useState(0);
