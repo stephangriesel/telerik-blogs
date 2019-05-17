@@ -17,7 +17,7 @@ const count = countState[0];
 const setCount = countState[1];
 ```
 
-This is obvioulsy verbose and we are creating a variable called `countState` that is unecessarry. The React team definitely would not reccomend this way of working with the `useState()1 method either. 
+This is obvioulsy verbose and we are creating a variable called `countState` that is unecessarry. The React team definitely would not reccomend this way of working with the `useState()` method either. 
 
 Instead we can use array destructuring to save both of those variables we want (`count`, `setCount`) and instead we can write something like this:
 
