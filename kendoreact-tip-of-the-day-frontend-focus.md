@@ -1,0 +1,1 @@
+One of my favorite things about React Hooks is the ease of which you can now use state within your functional components to manage state. You can find some great examples on ReactJS.org as well as I have some great articles covering the basics on the [Telerik Blog](https://www.telerik.com/blogs/author/eric-bishard)
