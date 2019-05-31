@@ -1,12 +1,16 @@
-One of my favorite things about React Hooks is the ease of which you can now use state within your functional components. You can find some great examples on [ReactJS.org](https://reactjs.org/docs/hooks-intro.html) as well as I have some great articles covering the basics on the [Telerik Blog](https://www.telerik.com/blogs/author/eric-bishard).
+# Tip of The Day
 
-My tip starts with understanding the concept of a basic React Hook, and moves on to show how to use someone elses hooks in your own code. Sharability of code is one reason React Hooks are becoming veryy popular. A final [StackBlitz](https://stackblitz.com) demo will demonstrate how to use that custom hook to pass either `true` or `false` to a prop in a [KendoReact]() component rendering it horizontal or vertical based on the browser width using a specified CSS media query that you don't even have to write. Here is a preview of it:
+One of my favorite things about React Hooks is the ease of which you can use state within functional components. This tip starts with understanding the concept of a Basic React Hook and moves on to show how to use custom hooks in your own code. 
+
+Shareability of code is one reason React Hooks are becoming very popular and that concept is illustrated in a  [StackBlitz](https://stackblitz.com) demo at the end of this brief tutorial. Here is a preview of that demo:
 
 ![](https://i.imgur.com/etEIlNo.gif)
 
-We are only going to cover the code needed to flip the value we pass to the KendoReact Menu component. But the demo will contain more code and features so that you have a fully working example in React.
+Before we get into that demo and its basics, let's briefly cover the `useState()` React Hook because I want you to understand the most fundamental way to use a React Hook before diving into that demo.
 
-First let's briefly cover `useState()` because I want you to understand the most fundamental way to use a hook. Let's say that we need to have a piece of state in one of our components that simply keeps track of a value, and when that value changes over time, we need our component to re-render and update a piece of text n the screen that shows the curent state of that value.
+## Part One, Basic React Hooks
+
+Let's say that we need to have a piece of state in one of our components that tracks a value representing a stock price over time to be displayed on the screen. As well, we need our component to re-render and update that price on the screen when it's value changes. A contrived example of that component may look like this:
 
 ```
 const StockPrice = () => {
@@ -17,11 +21,11 @@ const StockPrice = () => {
 }
 ```
 
-What's happening on the second line, is that we are setting up a state variable named `price`. It will get a default value that I have hard coded to `188.22`. As well we have another value called `setPrice` that can be used to update the state known as `price`. Recognize the correlation between the two and the naming convention and we will come back to it in a moment.
+What happens here on the second line, is the creation of a state variable named `price` and assignment of a default value: `188.22`. As well we have a variable named `setPrice` that is actually a method used to update the state associated with it: `price`.
 
-We also need to display the stock price on the screen by placing it within curly braces somewhere inside the render function like so: `{price}`. This is how any value in React is displayed.
+We also display the stock price on the screen by placing its variable name within curly braces inside the render function.
 
-If you are familiar with React's `state` object, the code above is equivelant to the following code used in a class component:
+If you are familiar with React's `state` object, the code I have shown you above is equivalent to the following code that you would write if you used a class component:
 
 ```
 class Counter extends React.Component {
@@ -34,15 +38,17 @@ class Counter extends React.Component {
 }
 ```
 
-Now let's create a function that we can use to call that update method :
+One thing I will note is that the definition of the `price` and `setPrice` are done using [array destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment). This works because the call to `useState()` returns two things:  
+1. A basic value (in our case a number) assigned to the first variable called `price`.  
+2. A function (method) assigned to the second variable called `setPrice` used to update the `price`  
+
+Once we have the `price` variable and `setPrice` update method setup, we can create a function that can be reused over and over in our component to call the `setPrice` method and update our state:
 
 ```
 const updatePrice = (newPrice) => setPrice(newPrice);
 ```
 
-We now have everything we need to set and update our stock price and we are well on our way to understanding te basics of how to use a basic React Hook. One thing I will note is that the defintion of the `price` and `setPrice` are done using [array destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment). This works because the call to `useState()` returns two things, a basic value (in our case a number) assigned to the first variable called `price` and a function assigned to the second variable called `setPrice`.
-
-That is the basics of how to use state in a React functional component, if we put all this together we can easily set, update and display state in a functional component with just a few lines of code. Very clear and concise. Here it is all together and you can optionally run the code below in a [StackBlitz demo](https://stackblitz.com/edit/react-tip-price-hook?file=StockPrice.js) to see it working:
+We now have everything we need to set, update and re-render our stock price using React Hooks. If we put all this together we can easily set, update and display state in a functional component with just a few lines of code very clearly and concisely. 
 
 ```
 const StockPrice = () => {
@@ -57,7 +63,11 @@ const StockPrice = () => {
 }
 ```
 
-So now that we have a basic idea of how Hooks work in a React functional component, let's take that knowledge and apply it to using a hook that was written by someone else. Let's imagine we have an application and inside that application we have a `<Menu />` component that takes a prop called `vertical`. If passed a value that is truthy, it will render our component vertical otherwise horizontal. That component at it's most basic looks like this:
+Here it that same code running in a [StackBlitz demo](https://stackblitz.com/edit/react-tip-price-hook?file=StockPrice.js) that you can play with.
+
+## Part Two, Custom React Hooks
+
+So now that we have a basic idea of how Hooks work in a React functional component, let's take that knowledge and apply it to using a hook that was written by someone else. Let's imagine we have an application and inside that application, we have a `<Menu />` component that takes a prop called `vertical`. If passed a value that is truthy, it will render our component vertical otherwise horizontal. That component at it's most basic looks like this:
 
 ```
 import { Menu } from '@progress/kendo-react-layout';
@@ -69,9 +79,9 @@ const MenuWrapper = () => {
 }
 ```
 
-Where items is a `json` list containing the text and hierarchy of menu buttons, However; in our app we need to render this component either vertically or horizontally based on the screen being above or below `415px` which is the value that we have determined to not be a mobile device once exceeded. We can use a custom hook for this called `useMediaPredicate` that we can import form a library called **react-media-hook**.
+Where items is a `json` list containing the text and hierarchy of menu buttons, However; in our app, we need to render this component either vertically or horizontally based on the screen being above or below `415px` which is the value that we have determined to not be a mobile device once exceeded. We can use a custom hook for this called `useMediaPredicate` that we can import from a library called **react-media-hook**.
 
-Outside of the React component shown above we can determine if a breakpoint has been exceeded or not using this React Hook. like so:
+Outside of the React component shown above, we can determine if a breakpoint has been exceeded or not using this React Hook. like so:
 
 ```
 import { useMediaPredicate } from 'react-media-hook';
@@ -85,8 +95,8 @@ const App = () => {
 }
 ```
 
-What we have done here is use someone elses custom React Hook, not a built in React Hook. If we visit their GitHub page, we can see the [actual implementation details of how that hook is built](https://github.com/streamich/use-media/blob/master/src/index.ts) and once we have determined that this is safe and exactly what we want, we can use their [nicely packaged hook](https://github.com/streamich/react-use-media), which allows us to simply import the hook, pass it a string which determines the media query and we minimize the code that needs to be written inside of our actual functional component. This is amazingly powerful and illustrates beyond using built in React Hooks, how we can share code with other developers and use that code in a very clear and concise way.
+What we have done here is use someone else's custom React Hook. If we visit their GitHub page, we can see the [actual implementation details](https://github.com/streamich/use-media/blob/master/src/index.ts) used to power this custom React Hook. Once we have determined that this is safe and exactly what we want, we can use their [nicely packaged hook](https://github.com/streamich/react-use-media), which allows us to very simply *import* their custom hook, and use it declaratively in our own functional components. This is amazingly powerful and illustrates beyond using built-in React Hooks, how we can share code with other developers and use that code in a very clear and concise way.
 
 I hope you like this tip, maybe you even learned something new today. If you would like to see this demo with a little bit more context, check out this [this StackBlitz demo](https://stackblitz.com/edit/react-layout-hello-world-4-z8t9sk?file=app/main.js) I have put together specifically for the FrontEndFocus "Tip of The Day". It has some additional responsive behavior you might find useful and some additional stying not shown above in our code samples, but I think you will find it extremely easy to navigate and play around with!
 
-My name is Eric Bishard, I am the developer advocate for the KendoReact team and if you have any questions about this tip or just want to learn more about our component library, hit me up on Twitter [@httpJunkie](https://twitter.com/httpJunkie)! Thanks...
+My name is Eric Bishard, I am the developer advocate for the [KendoReact](https://www.KendoReact.com) team and if you have any questions about this tip or just want to learn more about our component library, hit me up on Twitter [@httpJunkie](https://twitter.com/httpJunkie)!
