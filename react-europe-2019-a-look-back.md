@@ -22,12 +22,9 @@ A few talks were what I feel to be a little on the advanced side and this is OK.
 
 I can't talk about everything that was presented on at the main stage, we would be here for hours, but it's all a great reason to go and check out day one and day two of the conference on YouTube, I'll put a list of all of the talks below so you can pick and choose and jump staight to the individual talks.
 
-
-
-
 ## Talks on YouTube
 
-DAY ONE (May 23rd)
+### DAY ONE (May 23rd)
 
 [The State of React and its Future (Jared Palmer)](https://www.youtube.com/watch?v=u_0ZMiQZr0k)
 [Saving the Web, 16ms at a Time (Joshua Comeau)](https://www.youtube.com/watch?v=viPhwbusWuE)
@@ -40,7 +37,6 @@ DAY ONE (May 23rd)
 [Coders are the new Rock Stars (Daniel Stein/DJ Fresh)]()
 [Magic Move transitions in React-native (Hein Rutjes)](https://www.youtube.com/watch?v=Uj7aWfrtey8)
 [Data models all the way; GraphQL + mobx-state-tree (Michel Weststrate)](https://www.youtube.com/watch?v=Sq2M00vghqY)
-[Lightning Talks]()
 [My 1st experience with TypeScript (Sébastien Picq)](https://www.youtube.com/watch?v=xrDI9AOptX4)  
 [Visual feature engineering for Machine Learning (Olga Petrova)](https://www.youtube.com/watch?v=zP8uB9YnDho)  
 [Why Design Systems? (Horacio Herrera)](https://www.youtube.com/watch?v=zQZGEF-wuT4)  
@@ -49,32 +45,43 @@ DAY ONE (May 23rd)
 [Optimising & Debugging React with React Profiler (Sebastian Szewczyk)](https://www.youtube.com/watch?v=1C1Kd8xIdhY)  
 [Write Semantic Markup and Styles, as the Soul Wants (Artur Kenzhaev)](https://www.youtube.com/watch?v=1U26zUG6Okg)  
 
-DAY TWO (May 24th)
+### DAY TWO (May 24th)
 
 [FBT: An i18n Framework for Supporting Complex Grammar and UI (John Watson)](https://www.youtube.com/watch?v=7XW3SkWsaKo)  
 [CodeSandbox (Ives van Hoorne)](https://www.youtube.com/watch?v=8Zi6UxKFu2o)  
 [Scheduling is the Future (Brandon Dail)](https://www.youtube.com/watch?v=Iyrf52cwxQI)  
-[Lightning Talks]()
-- [5 Steps Toward Your Testing Dream (Lisa Gagarina)]()
-- [Building and Maintaining Accessible Experiences at Scale (Jonathan Yung)](
-- [Redux Style backends (Vladimir Novick)]()
-- [Building Features/React Components for AB testing (Rohit Roy)]()
-- [Cross platform UI in Kiwi.com (Michal Sänger)]() 
-- [Stacks on stacks in React Native (Charles Mangwa)]()
-- [React Native: How a 10 Week Experiment Lead to 3+ Yrs of Client Engagement (Forrest Frazier)]()
+[5 Steps Toward Your Testing Dream (Lisa Gagarina)](https://www.youtube.com/watch?v=s30iL1pyD58)
+[Building and Maintaining Accessible Experiences at Scale (Jonathan Yung)](https://www.youtube.com/watch?v=GxB3Tr-9WNA)
+[Redux Style backends (Vladimir Novick)](https://www.youtube.com/watch?v=3ASh8xcWUmM)
+[Building Features/React Components for AB testing (Rohit Roy)](https://www.youtube.com/watch?v=vqQFrJ0Ua9g)
+[Cross platform UI in Kiwi.com (Michal Sänger)]() 
+[Stacks on stacks in React Native (Charles Mangwa)](https://www.youtube.com/watch?v=QGtsYDtPezY)
+[React Native: How a 10 Week Experiment Lead to 3+ Yrs of Client Engagement (Forrest Frazier)](https://www.youtube.com/watch?v=NzM0EWbmcww)
 [Security and Data in React (Richard Threlkeld)]()
 [Build forms with GraphQL (Charly POLY)]()
-[Lightning Talks]()
-- [Component Styles as API: Layout vs Appearance (Marc Robichaud)]()
-- [Performance By Default: Make the Right Thing the Easy Thing (Mike Allanson)]()
+[Component Styles as API: Layout vs Appearance (Marc Robichaud)](https://www.youtube.com/watch?v=FNdByml3zr4)
+[Performance By Default: Make the Right Thing the Easy Thing (Mike Allanson)](https://www.youtube.com/watch?v=tnjA6Hj8P30)
 [The Future of The Web (Lee Byron)]()
 [On React Native and The Web (Evan Bacon)]()
-[Lightning Talks]()
-- [Brown field RN App w/ Multiple React Roots as Individual NPM Packages (Francois Roland)]()
-- [Crafting Your Component Development Experience w/ Lerna and Storybook (Erik Nguyen)]()
+[Brown field RN App w/ Multiple React Roots as Individual NPM Packages (Francois Roland)](https://www.youtube.com/watch?v=a6zMAXv4eUs)
+[Crafting Your Component Development Experience w/ Lerna and Storybook (Erik Nguyen)](https://www.youtube.com/watch?v=y0cTKKWCbMs)
 [Accessibility 360 - Web to Mobile (Ankita Kulkarni)]()
 [Yarn 2 - Reinventing Package Management (Maël Nison)]()
 [NextJS (Tim Neutkens)]()
-[Q&A Panel]( Hackathon
+[Q&A Panel](https://www.youtube.com/watch?v=eYF4wnXCDjg)
 
-held on the Saturday after the conference posing a [KendoReact](https://www.telerik.com/kendo-react-ui/) challenge offering attendees the oportunity to win an Apple Watch by hacking on demo we put together where attendees built a travel booking site using our React components.
+## Hackathon
+
+This was held on the Saturday after the conference. We posed a KendoReact challenge, offering attendees the opportunity to win an Apple Watch by hacking a demo we put together where attendees built a travel booking site using our React components.
+
+![Hackathon Prizes Image](https://d585tldpucybw.cloudfront.net/sfimages/default-source/default-album/prizes.png?sfvrsn=4a645c98_1)
+
+This event was attended by about 20 developers that stuck around an extra day to try their hand at our coding challenges.
+
+![Hackathon Attendees Image](https://d585tldpucybw.cloudfront.net/sfimages/default-source/default-album/hackerz.png?sfvrsn=a2cb2465_1)
+
+Everyone did such an amazing job that we decided to give three runners up KendoReact licenses as well!
+
+![Hackathon Winner](https://d585tldpucybw.cloudfront.net/sfimages/default-source/default-album/winner.png?sfvrsn=a9eecd78_1)
+
+One winner (shown above), who combined both our KendoReact challenge and the AWS Amplify challenge, took home the well-deserved Apple Watch and a KendoReact license. As I said above three runners up also walked out with a KendoReact license. Thanks to everyone who participated!
