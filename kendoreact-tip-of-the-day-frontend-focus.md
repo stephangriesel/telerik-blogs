@@ -97,6 +97,8 @@ const App = () => {
 
 What we have done here is use someone else's custom React Hook. If we visit their GitHub page, we can see the [actual implementation details](https://github.com/streamich/use-media/blob/master/src/index.ts) used to power this custom React Hook. Once we have determined that this is safe and exactly what we want, we can use their [nicely packaged hook](https://github.com/streamich/react-use-media), which allows us to very simply *import* their custom hook, and use it declaratively in our own functional components. This is amazingly powerful and illustrates beyond using built-in React Hooks, how we can share code with other developers and use that code in a very clear and concise way.
 
+Here it that same code running in a [StackBlitz demo](https://stackblitz.com/edit/react-tip-using-layout-hook?file=index.js) that you can play with.
+
 I hope you like this tip, maybe you even learned something new today. If you would like to see this demo with a little bit more context, check out this [this StackBlitz demo](https://stackblitz.com/edit/react-layout-hello-world-4-z8t9sk?file=app/main.js) I have put together specifically for the FrontEndFocus "Tip of The Day". It has some additional responsive behavior you might find useful and some additional stying not shown above in our code samples, but I think you will find it extremely easy to navigate and play around with!
 
 My name is Eric Bishard, I am the developer advocate for the [KendoReact](https://www.KendoReact.com) team and if you have any questions about this tip or just want to learn more about our component library, hit me up on Twitter [@httpJunkie](https://twitter.com/httpJunkie)!
