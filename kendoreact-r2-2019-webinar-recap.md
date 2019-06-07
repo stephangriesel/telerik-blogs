@@ -6,57 +6,27 @@ The [KendoReact](https://www.telerik.com/kendo-react-ui) R2 2019 release is pack
 
 In case you missed it, here's a summary of the top highlights that we covered during the webinar:
 
-*   [Xxxx](Xxxx)
-*   [Xxxx](Xxxx)
-*   [Xxxx](Xxxx)
-*   [Xxxx](Xxxx)
-*   [Xxxx](Xxxx)
-*   [Xxxx](Xxxx)
-*   [Xxxx](Xxxx)
+* [Editor](https://www.telerik.com/kendo-react-ui/components/editor/)
+* [DateTimePicker](https://www.telerik.com/kendo-react-ui/components/dateinputs/datetimepicker/)
+* [Notification](https://www.telerik.com/kendo-react-ui/components/notification/)
+* [Slider](https://www.telerik.com/kendo-react-ui/components/inputs/slider/)
+* [Sortable](https://www.telerik.com/kendo-react-ui/components/sortable/)
+* [Draggable](https://www.telerik.com/kendo-react-ui/components/utils/draggable/)
+* [Column Virtualization](https://www.telerik.com/kendo-react-ui/components/grid/columns/column-virtualization/)
+* [Tree (Drag & Drop)](https://www.telerik.com/kendo-react-ui/components/treeview/drag-drop/)
+* [Tree (Checkboxes)](https://www.telerik.com/kendo-react-ui/components/treeview/checkboxes/updating-items-directly/)
 
 A more in depth review of the latest features can be read in our [What's New in KendoReact R2 2019](https://www.telerik.com/blogs/whats-new-in-kendoreact-with-r2-2019) article by Carl Bergenhem!
 
 ## KendoReact R2 2019 Webinar
 
-Hosts: [Eric Bishard](https://twitter.com/httpjunkie), [John Bristowe](https://twitter.com/johnbristowe) and [Carl Bergenhem](https://twitter.com/carlbergenhem). Don't worry if you didn't get a chance to watch it live. We've posted it to our YouTube channel. In fact, you can watch it now!
+This R2 webinar was hosted by [Eric Bishard](https://twitter.com/httpjunkie), [John Bristowe](https://twitter.com/johnbristowe) and [Carl Bergenhem](https://twitter.com/carlbergenhem) and it was streamed live on June 4th 2019. Don't worry if you didn't get a chance to watch it live. We've posted it to our YouTube channel. In fact, you can watch it now!
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=FJr2eUT0tf0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<iframe width="560" height="315" frameborder="0" src="https://www.youtube.com/watch?v=FJr2eUT0tf0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
 
 ## Webinar Prize Winner
 
-During the webinar, we asked attendees to ask questions and offered a free KendoReact license as a prize for the best one. The winner is **TBD**. 
-<!-- Congratulations and thanks for your great question! -->
-
-### Contenders: 
-
-name: james@----------ess.com
-questions asked: 3
-best question: Is there a place on the Kendo React website that lists the Kendo release and which minimum React release that is supported?
-
-name: ----------001@gmail.com
-questions asked: 1
-best question: In the [KendoReact Editor](https://www.telerik.com/kendo-react-ui/components/editor/), Do we have any option to configure @mention user features?
-
-name: An------@------------.amat.com
-questions asked: X
-best question: Do you have Print to PDF option in kendoReact with HD images? Is there any memory restriction with this feature?
-We have a requirement to generate PDF for 500 pages with images and text. We were getting out of memory exception with telerik component and we moved to a work around. Wondering if Kendo React has some option to print from browser page to PDF?
-
-name: rak----------@gmail.com
-questions asked: 7
-best question: Can I embed picture in rich text editor as of now?
-
-name: xxx@xxx.com
-questions asked: 3
-best question: What about a wizard or progress bar component?  do you have those in kendo react? Since there is no Wizard component as yet, how could I build one using KendoReact and the available components now?
-
-name: ci----------@-----software.com
-questions asked: 1
-best question: Is there a more detailed development Roadmap.  I've found this (https://www.telerik.com/kendo-react-ui/roadmap/) but I'd really like to see something more detailed if possible?
-
-name: tf-------@-----online.com
-questions asked: 2
-best question: In a grid can you have multiple filters per column?example: `< 100 AND contains "abc"`?
+During the webinar, we asked attendees to ask questions and offered a free KendoReact license as a prize for the best one. The winner is **Doug Rivord**. Congratulations and thanks for your great question!
 
 ## Webinar Questions and Answers
 
@@ -68,14 +38,6 @@ It's on our immediate [KendoReact Roadmap](https://www.telerik.com/kendo-react-u
 
 **Is there a more detailed development Roadmap.  I've found this (https://www.telerik.com/kendo-react-ui/roadmap/) but I'd really like to see something more detailed if possible?**  
 We will be updating this roadmap page to provide more details over the next couple of days!
-
-**We are using JavaScript versioning to load latest JS changes for users. Does KendoReact.js load automatically or do you also face browser cache issue?**
-
-Not Answered Yet...
-
-**Do you have a Print to PDF option in kendoReact that will work with HD images? Is there any memory restriction with this feature? We have a requirement to generate PDFs for 500 different pages each with images and text. We were getting 'out of memory exception' with the KendoReact PDF component and had to use a work around. Does Kendo React have an option to print from browser page to PDF?**
-
-Not Answered Yet...
 
 **Is it possible to click a button that will add a new row to the grid and also removing a row from the grid when clicking on a remove button?**  
 Our Grids support all types of data binding. It's completely possible to update and remove rows/items from a collection that is tied to the output of the grid.
