@@ -37,14 +37,26 @@ name: ----------001@gmail.com
 questions asked: 1
 best question: In the [KendoReact Editor](https://www.telerik.com/kendo-react-ui/components/editor/), Do we have any option to configure @mention user features?
 
-name: xxx@xxx.com
+name: An------@------------.amat.com
 questions asked: X
 best question: Do you have Print to PDF option in kendoReact with HD images? Is there any memory restriction with this feature?
 We have a requirement to generate PDF for 500 pages with images and text. We were getting out of memory exception with telerik component and we moved to a work around. Wondering if Kendo React has some option to print from browser page to PDF?
 
+name: rak----------@gmail.com
+questions asked: 7
+best question: Can I embed picture in rich text editor as of now?
+
 name: xxx@xxx.com
-questions asked: X
-best question: ?
+questions asked: 3
+best question: What about a wizard or progress bar component?  do you have those in kendo react? Since there is no Wizard component as yet, how could I build one using KendoReact and the available components now?
+
+name: ci----------@-----software.com
+questions asked: 1
+best question: Is there a more detailed development Roadmap.  I've found this (https://www.telerik.com/kendo-react-ui/roadmap/) but I'd really like to see something more detailed if possible?
+
+name: tf-------@-----online.com
+questions asked: 2
+best question: In a grid can you have multiple filters per column?example: `< 100 AND contains "abc"`?
 
 ## Webinar Questions and Answers
 
