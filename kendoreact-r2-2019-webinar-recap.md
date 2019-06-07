@@ -28,31 +28,26 @@ During the webinar, we asked attendees to ask questions and offered a free Kendo
 
 ## Webinar Questions and Answers
 
-**We currently have a Kendo UI license, do we have to purchase a new KendoReact license?**  
-Your Kendo UI bundle includes UI libraries for jQuery, Angular, React, and Vue! So, you would not need a new license, just get to work using KendoReact by visiting our docs: :) 
-
-[KendoReact Component Documentation](https://www.telerik.com/kendo-react-ui/components)  
-
 **Is KendoReact a wrapper of Kendo UI jQuery components or React components created from scratch?**
 The KendoReact components have all been written completely from scratch specifically for React - no dependencies!
 
-**Is there a kendoreact scheduled component? If not, will there be?**
+**Is there a KendoReact scheduled component? If not, will there be?**
 It's on our immediate [KendoReact Roadmap](https://www.telerik.com/kendo-react-ui/roadmap/)! 
 
 **Is there a more detailed development Roadmap.  I've found this (https://www.telerik.com/kendo-react-ui/roadmap/) but I'd really like to see something more detailed if possible?**  
 We will be updating this roadmap page to provide more details over the next couple of days!
 
-**Is it possible to click an add new button that will add a new row to the grid and also removing a row from the grid when clicking on a remove button?**  
+**Is it possible to click a button that will add a new row to the grid and also removing a row from the grid when clicking on a remove button?**  
 Our Grids support all types of data binding. It's completely possible to update and remove rows/items from a collection that is tied to the output of the grid.
 
 **Are there any plans to add an accessibility checker to the WYSIWYG editor, so that end users can make sure their edits are accessible??**  
-Currently this is not on the roadmap, if you could elaborate on our public [feedback portal](https://feedback.telerik.com/kendo-react-ui).
+Currently, this is not on the KendoReact Roadmap, if you could elaborate on our public [feedback portal](https://feedback.telerik.com/kendo-react-ui).
 
 **Any plans to bring react native into the mix?**  
-Currently we do not have immediate plans for React Native UI components, but we certainly are chatting about it frequently!
+Currently, we do not have immediate plans for React Native UI components, but we certainly are chatting about React Native and what is possible from a UI standpoint, It's questions like this that keep these ideas fresh in our head, Thank you for participating today and asking great questions!
 
 **Is there any nested grid available in Kendo react?**  
-Yes, you can checkout the [Master-Detail Grids demo](https://www.telerik.com/kendo-react-ui/components/grid/advanced-features/hierarchy/)  
+Yes, you can check out the [Master-Detail Grids demo](https://www.telerik.com/kendo-react-ui/components/grid/advanced-features/hierarchy/)  
 
 **Can you remove the obligatory placeholder (e.g. "day/month/year") from the date inputs?**  
 I think what you want to do is 'format' that date input placeholder differently. In order to do that, you can check out the [Placeholders Documentation](https://www.telerik.com/kendo-react-ui/components/dateinputs/dateinput/placeholders/) page.
@@ -64,20 +59,20 @@ Anywhere that you can run React, you can run KendoReact components. However, I h
 **Is there a drop target to go along with the new draggable?**  
 No, it's fairly easy to track the last coordinates of the Draggable selected and when released by the user. The ability to set those coordinates I have exposed in a [Draggable StackBlitz Demo](https://stackblitz.com/edit/kendoreact-r2-2019-draggable?file=app/main.jsx) altered version of our draggable demo. I do understand if this is not what you are looking for and can say that if you have ideas for the Draggable API, please visit our public [feedback portal](https://feedback.telerik.com/kendo-react-ui).
 
-**Can we format date in textbox for datetime control currently its showing as dd/mm/yyyy but suppose if i want to show as dd/MMM/yyyy after date selection?**  
-I have setup a [StackBlitz DateTime Demo](https://stackblitz.com/edit/kendoreact-r2-2019-date-time-picker-format?file=app/main.jsx) to show exactly how to do this, the DateTimePicker has a prop named format, which you can simply pass the string`dd/MMM/yyyy` and you get the three letter month instead of the two digit month. 
+**Can we format the date in the textbox for DateTime control. Currently it's showing as dd/mm/yyyy but suppose if I want to show it as dd/MMM/yyyy after date selection?**  
+I have set up a [StackBlitz DateTime Demo](https://stackblitz.com/edit/kendoreact-r2-2019-date-time-picker-format?file=app/main.jsx) to show exactly how to do this, the DateTimePicker has a prop named format, which you can simply pass the string`dd/MMM/yyyy` and you get the three letter month instead of the two digit month. 
 
 **Is the Virtual scroll for the KendoReact Grid pagination server side or client side?**  
 It can be both. Depends on where you are loading your data from and how you want to handle it. The Grid itself does not necessarily bind directly to your server-side logic, so whatever you have in terms of a data fetching setup (full client-side, or server-side) will work for virtualization.
 
-**Is there any option available to take screenshot like capturing screen on button click and ask to attach and send as email?**  
+**Is there any option available to take a screenshot like capturing screen on button click and ask to attach and send an email?**  
 No, but if this is something you feel would make a great component as part of KendoRact, let us know on the public [feedback portal](https://feedback.telerik.com/kendo-react-ui).
 
 **Does the pure Kendo React grid now implement all the functionality of the jQuery grid wrapper?**  
-At this point it would be some smaller features here and there, but overall we cover the same features (if not more when thinking about column virtualization) and you should be safe to migrate over.
+At this point, it would be some smaller features here and there, but overall we cover the same features (if not more when thinking about column virtualization) and you should be safe to migrate over.
 
-**Is that Kendo React component storybook available somewhere? (I missed the link if there was one)?**  
-John Bristowe has that [on his private repo](https://github.com/jbristowe/kendoreact-storybook), so you should go fork it and check it out!
+**Is that Kendo React component [StoryBook](https://storybook.js.org/) available somewhere? (I missed the link if there was one)?**  
+John Bristowe has that [on his private repo](https://github.com/jbristowe/kendoreact-storybook), so you should go fork it and open up the project locally, it's pretty cool and a great way to learn StoryBook!
 
 **I use the Kendo UI for jQuery and Kendo UI for Angular, but I am not able to find the same component in react ?**  
 All of these libraries are evolving naturally based on feedback. If a component is missing definitely let us know by submitting feedback on our public [feedback portal](https://feedback.telerik.com/kendo-react-ui).
@@ -97,23 +92,23 @@ You can check it out on our [Grid Page](https://www.telerik.com/kendo-react-ui/c
 **We have been developing a project since 2017 when only Kendo React Wrappers available. What do you suggest - whether we should re-write it with components or will keep it that way?**  
 You may not need to re-write those parts that work. You could keep your[Kendo Wrapper Components (deprecated)](https://docs.telerik.com/kendo-ui/third-party/react#react) the way they are and then use our native components for the new bits. It's fine to use them both in the same project, but we strongly advise using the new [KendoRact components](https://www.telerik.com/kendo-react-ui/components/) for all new development!
 
-**Concerning the KendoReact Input component - If I set the value prop then it becomes read only. I can't use defaultValue props as defaultValue can only be set once on load, on subsequent rendering though the state changes the default value is same. Any fix over that in this release?**  
-Once setting the value prop, the component enters a controlled state. In order to keep the component in controlled state, you must handle the `onChange()` event and pass the new value property.
+**Concerning the KendoReact Input component - If I set the value prop then it becomes read-only. I can't use defaultValue props as defaultValue can only be set once on load, on subsequent rendering through the state changes the default value is the same. Any fix over that in this release?**  
+Once setting the value prop, the component enters a controlled state. In order to keep the component in a controlled state, you must handle the `onChange()` event and pass the new value property.
 
-**when we use wrappers and components together won't be there a css conflict?**  
+**when we use wrappers and components together won't be there a CSS conflict?**  
 The components share CSS. One theme can work across multiple Kendo libraries :)
 
-**What would you suggest as a UI testing framework which best fits to my react app development along with kendo?**  
+**What would you suggest as a UI testing framework which best fits my react app development along with Kendo UI?**  
 We believe one of the better testing libraries out there for React developers is Kent C Dodd's [React Testing Library](https://github.com/testing-library/react-testing-library). There are videos on Egghead to help you get acquainted with it, as well there is a [good blog post](https://kentcdodds.com/blog/introducing-the-react-testing-library) on the authors' blog!
 
-**What about a wizard or progress bar component?  do you have those in kendo react?**
+**What about a wizard or progress bar component?  Do you have those in KendoReact?**
 We do not have them added yet, but the progress bar is at least on our short list and should arrive later in 2019! As for the wizard component we recommend submitting this as a feedback item to our public [feedback portal](https://feedback.telerik.com/kendo-react-ui).
 
 **I wrote a web app when KendoReact it first came out ( version 0.4.0 ), are there any instructions upgrading from 0.4.0 to 3.1.0? Or can I just update the library and it should work?**
 We now require React 16.8 or latest version of react. Let us know if you're having any problem and we'd be happy to help. Otherwise, the most notable changes in our components were updates to the API and properties of [KendoReact Grid](https://www.telerik.com/kendo-react-ui/components/grid/). 
 
 **Do you have any options for adding any type of animations to the components?**
-We have a dedicated Animation package which is used internaly across [all KendoReact components](). You can also use them as a standalone components. https://www.telerik.com/kendo-react-ui/components/animation/
+We have a dedicated Animation package which is used internally across [all KendoReact components](). You can also use them as a standalone component. https://www.telerik.com/kendo-react-ui/components/animation/
 
 **Are there any plans to add a Drawer Component to KendoReact?**
 Yes! More news in the coming months on this and other components and feature news. Keep an eye on the [KendoReact changelog](https://www.telerik.com/kendo-react-ui/components/changelogs/ui-for-react/) also!
@@ -121,10 +116,10 @@ Yes! More news in the coming months on this and other components and feature new
 **Have recent grid updates added features that make it easier to work with the Grid in Responsive designs, such as on the fly hiding of columns?**
 Carl B: Certainly! It's very easy to work with a column collection to determine what to show or hide to control this. We're actively working in a sample to make this easier to follow with responsive scenarios but there's no issue with doing that already today. If you need some assistance in this definitely reach out to our support team for help!
 
-Eric B: Since props can be bound to state that is dynamic and representative of the current breakpoint, we can make decisions off these values and update the render. This gives me the opportunity to shut things off, change the way they are displayed, etc. But nothing added to the grid that has to do with rendering it responsively. We are always tweaking performance of our components and we strive to make them work well at any resolution and/or device.
+Eric B: Since props can be bound to state that is dynamic and representative of the current breakpoint, we can make decisions off these values and update the render. This gives me the opportunity to shut things off, change the way they are displayed, etc. But nothing added to the grid that has to do with rendering it responsively. We are always tweaking the performance of our components and we strive to make them work well at any resolution and/or device.
 
 **Is there a place on the Kendo React website that lists the Kendo release and which minimum React release that is supported??**
-Right now this is a bit hidden across various articles, but we will make this easier over the next couple of weeks by creating a "system requirements" page to help not only with the React version but any other items we can think of (browser support etc.). We want to ensure that this info is easier to find :)
+Right now this is a bit hidden across various articles, but we will make this easier over the next couple of weeks by creating a "system requirements" page to help not only with the React version but any other items we can think of (browser support, etc.). We want to ensure that this info is easier to find :)
 
 **What is the Kendo YouTube channel?**  
 [Kendo UI TV](https://www.youtube.com/user/kendouiTV)
