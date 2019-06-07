@@ -29,17 +29,18 @@ During the webinar, we asked attendees to ask questions and offered a free Kendo
 
 ### Contenders: 
 
-name: james@*************ess.com
+name: james@----------ess.com
 questions asked: 3
 best question: Is there a place on the Kendo React website that lists the Kendo release and which minimum React release that is supported?
 
-name: xxx@xxx.com
-questions asked: X
-best question: ?
+name: ----------001@gmail.com
+questions asked: 1
+best question: In the [KendoReact Editor](https://www.telerik.com/kendo-react-ui/components/editor/), Do we have any option to configure @mention user features?
 
 name: xxx@xxx.com
 questions asked: X
-best question: ?
+best question: Do you have Print to PDF option in kendoReact with HD images? Is there any memory restriction with this feature?
+We have a requirement to generate PDF for 500 pages with images and text. We were getting out of memory exception with telerik component and we moved to a work around. Wondering if Kendo React has some option to print from browser page to PDF?
 
 name: xxx@xxx.com
 questions asked: X
@@ -55,6 +56,14 @@ It's on our immediate [KendoReact Roadmap](https://www.telerik.com/kendo-react-u
 
 **Is there a more detailed development Roadmap.  I've found this (https://www.telerik.com/kendo-react-ui/roadmap/) but I'd really like to see something more detailed if possible?**  
 We will be updating this roadmap page to provide more details over the next couple of days!
+
+**We are using JavaScript versioning to load latest JS changes for users. Does KendoReact.js load automatically or do you also face browser cache issue?**
+
+Not Answered Yet...
+
+**Do you have a Print to PDF option in kendoReact that will work with HD images? Is there any memory restriction with this feature? We have a requirement to generate PDFs for 500 different pages each with images and text. We were getting 'out of memory exception' with the KendoReact PDF component and had to use a work around. Does Kendo React have an option to print from browser page to PDF?**
+
+Not Answered Yet...
 
 **Is it possible to click a button that will add a new row to the grid and also removing a row from the grid when clicking on a remove button?**  
 Our Grids support all types of data binding. It's completely possible to update and remove rows/items from a collection that is tied to the output of the grid.
