@@ -24,7 +24,26 @@ Hosts: [Eric Bishard](https://twitter.com/httpjunkie), [John Bristowe](https://
 
 ## Webinar Prize Winner
 
-During the webinar, we asked attendees to ask questions and offered a free KendoReact license as a prize for the best one. The winner is **Harry Singh**. Congratulations and thanks for your great question!
+During the webinar, we asked attendees to ask questions and offered a free KendoReact license as a prize for the best one. The winner is **TBD**. 
+<!-- Congratulations and thanks for your great question! -->
+
+### Contenders: 
+
+name: james@*************ess.com
+questions asked: 3
+best question: Is there a place on the Kendo React website that lists the Kendo release and which minimum React release that is supported?
+
+name: xxx@xxx.com
+questions asked: X
+best question: ?
+
+name: xxx@xxx.com
+questions asked: X
+best question: ?
+
+name: xxx@xxx.com
+questions asked: X
+best question: ?
 
 ## Webinar Questions and Answers
 
@@ -51,6 +70,9 @@ Yes, you can check out the [Master-Detail Grids demo](https://www.telerik.com/ke
 
 **Can you remove the obligatory placeholder (e.g. "day/month/year") from the date inputs?**  
 I think what you want to do is 'format' that date input placeholder differently. In order to do that, you can check out the [Placeholders Documentation](https://www.telerik.com/kendo-react-ui/components/dateinputs/dateinput/placeholders/) page.
+
+**In the [KendoReact Editor](https://www.telerik.com/kendo-react-ui/components/editor/), Do we have any option to configure @mention user features?**
+This feature is not in the Editor at this time, but you can certainly suggest this as a feature, please visit our public [feedback portal](https://feedback.telerik.com/kendo-react-ui). I feel like this would be a specialized demo that we create to show how this can be done in the editor, rather than being a feature of the grid. But the idea should be explored.
 
 **About how difficult is it to integrate KendoReact into an ASP .NET C# MVC project?** 
 
