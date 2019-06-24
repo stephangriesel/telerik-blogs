@@ -1,6 +1,6 @@
 ---
 published: false
-title: Front-end Focus Tip June
+title: Responsive Layout With React Hooks and Context
 summary: Draft for Front-end Focus article tip section for our sponsorship in June.
 keywords: Guide, JavaScript, React, Layout, Tutorial 
 ---
@@ -9,9 +9,9 @@ I recently spoke at a React conference in Chicago. I got a lot of questions abou
 
 ![](https://imgur.com/zzE28c0.gif)
 
-I have already written about the topic on the [Telerik Blog](https://www.telerik.com/blogs/creating-a-responsive-layout-in-react), as well I have taken the idea even further in the demo that I am using in my talks which can be found on GitHub at [httpJunkie/react-loop-demo](https://github.com/httpJunkie/react-loop-demo).
+A blog article that I wrote on the Telerik Blog called [Creating a Responsive Layout in React](https://www.telerik.com/blogs/creating-a-responsive-layout-in-react) has some information on this topic, as well I have taken the idea even further in the demo that I am using in my current talks. The demo can be cloned from GitHub at [httpJunkie/react-loop-demo](https://github.com/httpJunkie/react-loop-demo) and I will explain the basics of how it works.
 
-To explain this functionality we start with a [cutom React Hook built by Lessmess](https://github.com/lessmess-dev) called [react-media-hook](https://github.com/lessmess-dev/react-media-hook) which uses the [matchMedia API](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) under the hood. We install this media query hook in our project by running `npm i react-media-hook`.
+Let's start with a cutom React Hook by GitHub user [Lessmess](https://github.com/lessmess-dev) called [react-media-hook](https://github.com/lessmess-dev/react-media-hook) which uses the [matchMedia API](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) under the hood. We install this media query hook in our project by running `npm i react-media-hook`.
 
 In my app, I import this hook at the top level of my `App.js` file (parent to all other components). 
 
