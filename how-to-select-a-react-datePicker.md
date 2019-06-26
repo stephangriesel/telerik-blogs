@@ -1,5 +1,5 @@
 ---
-title: Choosing the Right React Datepicker
+title: Choosing the Right React Datepicker UI Component
 published: true
 description: Finding a good datepicker for your application should be easy, but with so many options to take into consideration, I try to give some insight into what features I look for in a React datepicker.
 tags: React, JavaScript, Grid, Components
@@ -46,7 +46,7 @@ Every application is different. When booking flights, we typically need the date
 
 My goal here is not to push you in the direction of a single datepicker, instead, I would rather give you some of my ideas of what the best datepicker is and let you decide which one to choose. There is no doubt that when it comes to React and open source datepickers, I'm a huge fan of Material UI because they cover most of the features that I require in a datepicker. I have built a datepicker component. I know what type of wrok goes into even the most simple datepicker components, so I definitely would rather you go with something open source that has all of the major issues worked out than try to build your own.
 
-As far as paid components go, I'm reluctant to tell you about KendoReact as you probably know we create amazing components. There are many great paid options out there. At the end of the day, I want you to do your due diligence and your own research to help you pick the datepicker that works best for you. However, if you are interested in hearing more about what we provide, my friend Carl has put together a great piece on how to use our datepicker in an article called ["Unleash the Power of the KendoReact Datepicker Component"](https://www.telerik.com/blogs/powerful-react-datepicker-component-example), so if you do pick ours, this is a great place to start to learn how to leverage its power and build something amazing.
+As far as paid components go, there are many great paid options. At the end of the day, you will do your due diligence and research to pick the datepicker that works best for you. However, if the KendoReact DatePicker is on your list to evaluate, my friend Carl has put together a great piece called ["Unleash the Power of the KendoReact Datepicker Component"](https://www.telerik.com/blogs/powerful-react-datepicker-component-example), that should save you some time during the evaluation process. it is a great resource where to learn how to leverage this Particular React DatePicker’s power and build something amazing.
 
 ## Enterprise Level Support
 
