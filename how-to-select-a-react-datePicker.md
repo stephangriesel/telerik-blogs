@@ -42,14 +42,14 @@ My concern is that if you are paying for a Datepicker off the shelf, it should h
 
 Every application is different. When booking flights, we typically need the date range feature, as well, having a button for today's date or the ability to select time is not as important. However, when visiting your dentist's website or choosing a doctor visit or maybe the best time to take your car in to get serviced, these scenarios may need a single datepicker with the option of selecting time. Another tricky situation is a birthday picker. In my opinion, the best way to do this is with a three-step process. Select the Month, then day and finally the year of the date you are trying to input. Because different applications throw different scenarios at you, the best datepickers will be ones that provide a variety of different options for the developer out of the box.
 
-## What's the Best Datepicker?
-
-My goal here is not to push you in the direction of a single datepicker, instead, I would rather give you some of my ideas of what the best datepicker is and let you decide which one to choose. There is no doubt that when it comes to React and open source datepickers, I'm a huge fan of Material UI because they cover most of the features that I require in a datepicker. I have built a datepicker component. I know what type of wrok goes into even the most simple datepicker components, so I definitely would rather you go with something open source that has all of the major issues worked out than try to build your own.
-
-As far as paid components go, there are many great paid options. At the end of the day, you will do your due diligence and research to pick the datepicker that works best for you. However, if the KendoReact DatePicker is on your list to evaluate, my friend Carl has put together a great piece called ["Unleash the Power of the KendoReact Datepicker Component"](https://www.telerik.com/blogs/powerful-react-datepicker-component-example), that should save you some time during the evaluation process. it is a great resource where to learn how to leverage this Particular React DatePicker’s power and build something amazing.
-
 ## Enterprise Level Support
 
 To put it simply, components that are not licensed rarely have any type of support outside of at-will community help. Most of the big web development shops and enterprise level businesses have tight deadlines and their developers push technology to the edge. It's helpful to have a team to reach out to that has expert knowledge of the components you're working with and paying good money for.
 
 Those are some of the key criteria on which to evaluate a React datepicker for your next application. If there are any features that you think you can't live without, put them in the comments and let us know what your favorite datepicker features are.
+
+## What's the Best Datepicker?
+
+My goal here is not to push you in the direction of a single datepicker, instead, I would rather give you some of my ideas of what the best datepicker is and let you decide which one to choose. There is no doubt that when it comes to React and open source datepickers, I'm a huge fan of Material UI because they cover most of the features that I require in a datepicker. I have built a datepicker component. I know what type of wrok goes into even the most simple datepicker components, so I definitely would rather you go with something open source that has all of the major issues worked out than try to build your own.
+
+As far as paid components go, there are many great paid options. At the end of the day, you will do your due diligence and research to pick the datepicker that works best for you. However, if the KendoReact DatePicker is on your list to evaluate, my friend Carl has put together a great piece called ["Unleash the Power of the KendoReact Datepicker Component"](https://www.telerik.com/blogs/powerful-react-datepicker-component-example), that should save you some time during the evaluation process. it is a great resource where to learn how to leverage this Particular React DatePicker’s power and build something amazing.
