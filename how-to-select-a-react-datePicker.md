@@ -5,7 +5,7 @@ description: Finding a good date picker for your application should be easy, but
 tags: React, JavaScript, Grid, Components
 ---
 
-Finding a good date picker for your application should be easy, but there are so many options out there and many things to take into consideration. There are free date pickers from open source libraries and paid date pickers that come with a license and support. Understanding what to look for and what features you can envision needing for your project will be very helpfulk and a good thing to think about up front when choosing your date picker.
+Finding a good date picker for your application should be easy, but there are so many options out there and many things to take into consideration. Understanding what to look for and what features you can envision needing for your project will be very helpful when choosing your date picker.
 
 ## Performance
 Before making a final decisions on a particular date picker component (or library), you should use the React Performance Tools to analyze the performance and try to replicate a real use case or scenario similar to how you will use it in production.
