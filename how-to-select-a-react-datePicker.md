@@ -1,7 +1,7 @@
 ---
 title: Choosing the Right React Datepicker
 published: true
-description: Finding a good date picker for your application should be easy, but with so many options to take into consideration, I try to give some insight into what features I look for in a React date picker.
+description: Finding a good datepicker for your application should be easy, but with so many options to take into consideration, I try to give some insight into what features I look for in a React datepicker.
 tags: React, JavaScript, Grid, Components
 ---
 
@@ -38,7 +38,7 @@ A lot of datepicker give you the option to have just an input which has a masked
 
 ### Good UX and Keyboard Control
 
-My concern is that if you are paying for a DatePicker off the shelf, it should have good UX and keyboard controls so that it's just as easy if not easier to use with a keyboard rather than a mouse. As well, how does that same control work on mobile? Does it work with gestures? Is it easy to select the date using your fingers instead of a mouse or keyboard? These are all questions you should be asking and determining which scenario best fits your application.
+My concern is that if you are paying for a Datepicker off the shelf, it should have good UX and keyboard controls so that it's just as easy if not easier to use with a keyboard rather than a mouse. As well, how does that same control work on mobile? Does it work with gestures? Is it easy to select the date using your fingers instead of a mouse or keyboard? These are all questions you should be asking and determining which scenario best fits your application.
 
 Every application is different. When booking flights, we typically need the date range feature, as well, having a button for today's date or the ability to select time is not as important. However, when visiting your dentist's website or choosing a doctor visit or maybe the best time to take your car in to get serviced, these scenarios may need a single datepicker with the option of selecting time. Another tricky situation is a birthday picker. In my opinion, the best way to do this is with a three-step process. Select the Month, then day and finally the year of the date you are trying to input. Because different applications throw different scenarios at you, the best datepickers will be ones that provide a variety of different options for the developer out of the box.
 
@@ -46,7 +46,7 @@ Every application is different. When booking flights, we typically need the date
 
 My goal here is not to push you in the direction of a single datepicker, instead, I would rather give you some of my ideas of what the best datepicker is and let you decide which one to choose. There is no doubt that when it comes to React and open source datepickers, I'm a huge fan of Material UI because they cover most of the features that I require in a datepicker. I have built a datepicker component. I know what type of wrok goes into even the most simple datepicker components, so I definitely would rather you go with something open source that has all of the major issues worked out than try to build your own.
 
-As far as paid components go, I'm reluctant to tell you about KendoReact as you probably know we create amazing components. There are many great paid options out there. At the end of the day, I want you to do your due diligence and your own research to help you pick the datepicker that works best for you. However, if you are interested in hearing more about what we provide, my friend Carl has put together a great piece on how to use our datepicker in an article called ["Unleash the Power of the KendoReact DatePicker Component"](https://www.telerik.com/blogs/powerful-react-datepicker-component-example), so if you do pick ours, this is a great place to start to learn how to leverage its power and build something amazing.
+As far as paid components go, I'm reluctant to tell you about KendoReact as you probably know we create amazing components. There are many great paid options out there. At the end of the day, I want you to do your due diligence and your own research to help you pick the datepicker that works best for you. However, if you are interested in hearing more about what we provide, my friend Carl has put together a great piece on how to use our datepicker in an article called ["Unleash the Power of the KendoReact Datepicker Component"](https://www.telerik.com/blogs/powerful-react-datepicker-component-example), so if you do pick ours, this is a great place to start to learn how to leverage its power and build something amazing.
 
 ## Enterprise Level Support
 
