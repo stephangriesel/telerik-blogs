@@ -1,7 +1,7 @@
 ---
 title: Choosing the Right React Datepicker UI Component
 published: true
-description: Finding a good datepicker for your application should be easy, but with so many options to take into consideration, I try to give some insight into what features I look for in a React datepicker.
+description: Finding a good datepicker comes with so many options to take into consideration, let's talk about what features to look for in a React datepicker!
 tags: React, JavaScript, Grid, Components
 ---
 
