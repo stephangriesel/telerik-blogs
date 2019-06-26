@@ -1,7 +1,7 @@
 ---
 title: Choosing the Right React Date Picker
 published: true
-description: Finding a Date Picker for your apps is a requirement for most enterprise level applications. In this article I'll give you some insight into what features I look for.
+description: Finding a good date picker for your application should be easy, but with so many options to take into consideration, I try to give some insight into what features I look for in a React date picker.
 tags: React, JavaScript, Grid, Components
 ---
 
