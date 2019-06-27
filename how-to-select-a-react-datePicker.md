@@ -7,7 +7,7 @@ tags: React, JavaScript, Grid, Components
 
 > Finding a good datepicker for your application should be easy, but there are so many options out there and many things to take into consideration.
 
-Understanding what to look for and what features you can envision needing for your project will be very helpfulk and a good thing to think about up front when choosing your datepicker.
+Understanding what to look for and what features you can envision needing for your project will be very helpful and a good thing to think about up front when choosing your datepicker.
 
 ## Performance
 
@@ -40,7 +40,7 @@ Selecting a datepicker that offers localization provides a better user experienc
 
 A datepicker should provide a good user experience, solid keyboard controls, strong mobile functionality, and the ability to work with gestures. Ask yourself if the component you’ve picked can do all of these things or at least the ones necessitated by your application.
 
-Every application is different. When booking flights, we typically need the date range feature, as well, having a button for today's date or the ability to select time is not as important. However, when visiting your dentist's website or choosing a doctor visit or maybe the best time to take your car in to get serviced, these scenarios may need a single datepicker with the option of selecting time. Another tricky situation is a birthday picker. In my opinion, the best way to do this is with a three-step process. Select the Month, then day and finally the year of the date you are trying to input. Because different applications throw different scenarios at you, the best datepickers will be ones that provide a variety of different options for the developer out of the box.
+Every application is different. When booking flights, we typically need the date range feature, as well, having a button for today's date or the ability to select time is not as important. However, when visiting your dentist's website or choosing a doctor visit or maybe the best time to take your car in to get serviced, these scenarios may need a single datepicker with the option of selecting time. Another tricky situation is a birthday datepicker. In my opinion, the best way to do this is with a three-step process. Select the Month, then day and finally the year of the date you are trying to input. Because different applications throw different scenarios at you, the best datepickers will be ones that provide a variety of different options for the developer out of the box.
 
 ## Enterprise Level Support
 
